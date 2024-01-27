@@ -1,0 +1,3213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="RocketCake"><b>
+    <title>Web W5</title>
+    <div class="date"></div>
+    <style type="text/css">
+      a {
+        color: #5D5D9E;
+      }
+
+      a:visited {
+        color: #5D5D9E;
+      }
+
+      a:active {
+        color: #000000;
+      }
+
+      a:hover {
+        color: #797979;
+
+      }
+    </style>
+
+<body>
+
+
+
+  <body style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/ales-krivec-38565-unsplash.jpg);border-radius: 0px;
+    border-radius: 0px;
+background: #3f546844;
+
+    background-position:center center; background-size:cover;">
+    <div style="text-align:center;">
+      <div
+        style="vertical-align: bottom; position:relative; display: flex; width:100%; min-height:193px; background-color:#00000000; background-image: url(https://unsplash.com/photos/photo-of-outer-space-Q1p7bh3SHj8); background-position:center center; background-size:cover;">
+
+        <!DOCTYPE html>
+        <html>
+
+        <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <meta name="generator" content="RocketCake">
+          <!DOCTYPE html>
+          <html lang="pl">
+
+          <head>
+            <meta charset="UTF-8">
+            <title>Digital Clock with Vue.js</title>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+            <link rel="stylesheet" href="./style.css">
+
+          </head>
+
+        <body>
+          <!-- partial:index.partial.html -->
+          <div id="clock">
+            <p class="date">{{ date }}</p>
+            <p class="time">{{ time }}</p>
+            <p class="text"></p>
+          </div>
+          <!-- partial -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js"></script>
+          <script src="./script.js"></script>
+
+        </body>
+
+        </html>
+
+        <body>
+          <title></title>
+          <style type="text/css">
+            a {
+              color: #5D5D9E;
+            }
+
+
+
+            a:visited {
+              color: #5D5D9E;
+            }
+
+            a:active {
+              color: #A6A9AA;
+            }
+
+            a:hover {
+              color: #B2B3B4;
+            }
+
+            html,
+            :root {
+              color: #292929;
+              text-shadow: 1px 1px 1px #474747,
+                -1px -1px 1px #818181;
+
+              background-color: #1b1b1b00;
+              font-size: 18px;
+              background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent),
+                linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent);
+              background-size: 55px 55px;
+
+              background-position: center center;
+              background-size: cover;
+              clear: both;
+              position: relative;
+              table-layout: fixed;
+              display: table;
+              text-align: center;
+              width: 100%;
+              height: 50vh;
+              background-color: transparent;
+              background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/ales-krivec-38565-unsplash.jpg);
+              background-repeat: repeat;
+              background-position: center center;
+              background-attachment: fixed;
+              background-position: 50% 0;
+              background-size: cover;
+              border: 0px solid #CCCCCC;
+              border-radius: 0px;
+              box-sizing: border-box;
+              margin: 0;
+              box-shadow: 0px 0px 45px #00000000;
+
+            }
+
+            hr.new1 {
+              border: 3px solid #292929;
+              box-shadow: 1px 1px 8px #000,
+                -1px -1px 8px #949494,
+                inset 1px 1px 3px #000,
+                inset -1px -1px 3px #949494;
+              border-radius: 10px;
+              height: 3px;
+              background-color: #ff9900;
+
+
+            }
+
+
+            p {
+              margin: 0;
+              padding: 0;
+            }
+
+            #clock {
+              font-family: "Share Tech Mono", monospace;
+
+              text-align: left;
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -4%);
+              color: #292929;
+              text-shadow: 2px 2px 5px #070707, -2px -2px 5px #7c7c7c;
+
+            }
+
+            #clock .time {
+              letter-spacing: 0.05em;
+              font-size: 70px;
+              padding: 0 0;
+
+            }
+
+            #clock .date {
+              letter-spacing: 0.1em;
+              font-size: 24px;
+            }
+
+            #clock .text {
+              letter-spacing: 0.1em;
+              font-size: 1px;
+              padding: 0px 0 0;
+
+            }
+          </style>
+
+          <body>
+
+            <body>
+
+              <body style="background-color:#d4d4d4; padding:0;  margin: 0;">
+                <div style="text-align:center;">
+                  <div id="jscript_65637dac"
+                    style="vertical-align: bottom; position:relative; display: inline-block; width:50%; height:100px; background:none; ">
+                    <script type="text/javascript">
+                      var clock = new Vue({
+                        el: "#clock",
+                        data: {
+                          time: "",
+                          date: ""
+                        }
+                      });
+
+                      var week = ["NIEDZIELA", "PONIEDZIALEK", "WTOREK", "SRODA", "CZWARTEK", "PIATEK", "SOBOTA"];
+                      var timerID = setInterval(updateTime, 1000);
+                      updateTime();
+
+                      function updateTime() {
+                        var cd = new Date();
+                        clock.time =
+                          zeroPadding(cd.getHours(), 2) +
+                          ":" +
+                          zeroPadding(cd.getMinutes(), 2) +
+                          ":" +
+                          zeroPadding(cd.getSeconds(), 2);
+                        clock.date =
+                          zeroPadding(cd.getFullYear(), 4) +
+                          "-" +
+                          zeroPadding(cd.getMonth() + 1, 2) +
+                          "-" +
+                          zeroPadding(cd.getDate(), 2) +
+                          " " +
+                          week[cd.getDay()];
+                      }
+
+                      function zeroPadding(num, digit) {
+                        var zero = "";
+                        for (var i = 0; i < digit; i++) {
+                          zero += "0";
+                        }
+                        return (zero + num).slice(-digit);
+                      }
+
+                    </script>
+                  </div>
+                </div>
+              </body>
+              <div class="htmlmenu-wrapper">
+                <div class="htmlmenu-header">
+                  <div class="htmlmenu-container">
+                    <div class="htmlmenu-logo"></div>
+                    <input type="checkbox" id="htmlmenu-toggle" class="htmlmenu-toggle">
+                    <label for="htmlmenu-toggle"><span></span><span></span><span></span></label>
+                    <nav class="htmlmenu-menu htmlmenu-submenu-slide-down htmlmenu-submenu-bordered" role="navigation">
+                      <ul>
+
+
+
+                        <li class="htmlmenu-menu-current">
+                          <input type="checkbox" id="htmlmenu-1539847293313">
+                          <a href="#"> <svg xmlns="http://www.w3.org/2000/svg"
+                              class="icon icon-tabler icon-tabler-brand-vscode" width="50" height="50"
+                              viewBox="0 0 22 22" stroke-width="1" stroke="#F2980F" fill="none" stroke-linecap="round"
+                              stroke-linejoin="round">
+                              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                              <path d="M16 3v18l4 -2.5v-13z" />
+                              <path
+                                d="M9.165 13.903l-4.165 3.597l-2 -1l4.333 -4.5m1.735 -1.802l6.932 -7.198v5l-4.795 4.141" />
+                              <path d="M16 16.5l-11 -10l-2 1l13 13.5" />
+                            </svg> Home
+                            <label for="htmlmenu-1539847293313"></label>
+                          </a>
+                          <ul>
+                            <li>
+                              <a href="#">New</a>
+                            </li>
+                            <li>
+                              <input type="checkbox" id="htmlmenu-1539847299696">
+                              <a href="#">Html
+                                <label for="htmlmenu-1539847299696"></label>
+                              </a>
+                              <ul>
+                                <li>
+                                  <a href="https://divtable.com/generator/">TABLE GENERATOR</a>
+                                </li>
+                                <li>
+                                  <a href="#">New</a>
+                                </li>
+                                <li>
+                                  <a href="#">New</a>
+                                </li>
+                                <li>
+                                  <a href="#">New</a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <input type="checkbox" id="htmlmenu-1539847300032">
+                              <a href="#">Codes Tool
+                                <label for="htmlmenu-1539847300032"></label>
+                              </a>
+                              <ul>
+                                <li>
+                                  <a href="#">New</a>
+                                </li>
+                                <li>
+                                  <a href="#">New</a>
+                                </li>
+                                <li>
+                                  <a href="#">New</a>
+                                </li>
+                                <li>
+                                  <a href="https://markodenic.com/tools/glassmorphism-css-generator/">Glassmorphism
+                                    CSS</a>
+                                </li>
+                                <li>
+                                  <a href="https://freecodetools.org/">CodeTools</a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <input type="checkbox" id="htmlmenu-1539847300388">
+                              <a href="#">Other
+                                <label for="htmlmenu-1539847300388"></label>
+                              </a>
+                              <ul>
+                                <li>
+                                  <a href="https://akaspanion.github.io/ui-neumorphism/">NeumorphismWeb</a>
+                                </li>
+                                <li>
+                                  <a href="https://uiverse.io/">Uiverse.io</a>
+                                </li>
+                                <li>
+                                  <a href="https://unsplash.com/">Unsplash</a>
+                                </li>
+                                <li>
+                                  <a href="https://tablericons.com/">Tabler Icons</a>
+                                </li>
+                                <li>
+                                  <a href="https://webgradients.com/">WebGradients</a>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <input id="htmlmenu-1539847293314" type="checkbox">
+                          <a href="#">Tools Web
+                            <label for="htmlmenu-1539847293314"></label>
+                          </a>
+                          <ul>
+                            <li>
+                              <a href="https://devtooly.com/">DevTooly</a>
+                            </li>
+                            <li>
+                              <a href="https://htmlcheatsheet.com/">HtmlCheatsheet</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <input id="htmlmenu-1539847293315" type="checkbox">
+                          <a href="#">Edytory HTML
+                            <label for="htmlmenu-1539847293315"></label>
+                          </a>
+                          <ul>
+                            <li>
+                              <a href="https://jsfiddle.net/">Jsfiddle</a>
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_element_iframe">w3schools</a>
+                            </li>
+                            <li>
+                              <a href="https://codepen.io/pen/">Gradients</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="https://www.vecteezy.com/free-vector/hexagon?page=4">Vectors</a>
+                        </li>
+                        <li>
+                          <a href="https://developer.mozilla.org/en-US/">Developers</a>
+                        </li>
+                        <li class="htmlmenu-submenu-right">
+                          <input type="checkbox" id="htmlmenu-1539847293318">
+                          <a href="#">CSS
+                            <label for="htmlmenu-1539847293318"></label>
+                          </a>
+                          <ul>
+                            <li>
+                              <a href="https://getcssscan.com/css-box-shadow-examples">CSS
+                                box-shadow</a>
+                            </li>
+                            <li>
+                              <a href="https://getcssscan.com/css-buttons-examples">CSS buttons </a>
+                            </li>
+                            <li>
+                              <a href="https://getcssscan.com/css-checkboxes-examples">CSS
+                                checkboxes</a>
+                            </li>
+                            <li>
+                              <a href="https://getcssscan.com/css-shapes">CSS shapes</a>
+                            </li>
+                            <li>
+                              <input type="checkbox" id="htmlmenu-1539847307074">
+                              <a href="http://">Shadow
+                                <label for="htmlmenu-1539847307074"></label>
+                              </a>
+                              <ul>
+                                <li>
+                                  <a href="https://box-shadow.dev/">Box Shadows</a>
+                                </li>
+                                <li>
+                                  <a href="https://www.joshwcomeau.com/shadow-palette/">Josh
+                                    Comeau</a>
+                                </li>
+                                <li>
+                                  <a href="https://neumorphism.io/#e0e0e0">Neumorphism</a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a href="https://codepen.io/stephenpaton-tech/full/JjRvGmY">Custom
+                                Scrollbar</a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <div class="htmlmenu-header-shadow"></div>
+                </div>
+                <div class="htmlmenu-header-spacer"></div>
+              </div>
+
+            </body>
+          </body>
+        </body>
+        </head>
+
+</html>
+</div>
+</div>
+<!DOCTYPE html>
+<html lang="pl">
+
+
+<meta charset="utf-8"><b>Login</b>
+<input type="text" name="text" class="input" value="leyam15178"><b>Pass:</b>
+<input type="text" name="text" class="input" value="leyam1517812345">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="RocketCake">
+<title>W5</title>
+<meta name="keywords" content="pl" />
+<style type="text/css">
+  a {
+    color: #585858;
+  }
+
+  a:visited {
+    color: #4d4d4d;
+  }
+
+  a:active {
+    color: #585858;
+  }
+
+  a:hover {
+    color: #3d3d3d;
+  }
+
+  html,
+  body {
+    min-height: 100%;
+  }
+
+
+
+  .input {
+    max-width: 190px;
+    width: 10px;
+    height: 5px;
+    outline: none;
+    margin: 25px;
+    transition: 1s;
+    border: none;
+    border-radius: 1px;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+    color: #292929;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: inline-flex;
+    border: 0px solid #292929;
+    transition: all 1.3s;
+    background: #292929;
+    box-shadow: 2px 2px 4px #0a0a0a,
+      -2px -2px 4px #747474;
+  }
+
+  .input:hover {
+
+
+    box-shadow: inset 1px 1px 2px #000000, inset -1px -1px 41px #000000, 1px 1px 2px #4b4b4b, -1px -1px 2px #000000;
+    background-color: #272727;
+    background: linear-gradient(-45deg, #000000, #000000, #000000, #ffffff);
+    background-size: 800% 400%;
+    padding: none;
+
+    border: none;
+
+    font-size: none;
+    font-weight: 700;
+    color: #ffa600;
+    text-shadow: 1px 1px 2px #000000;
+    transition: all 1.0s ease-in-out;
+    animation: gradient 15s infinite cubic-bezier(.62, .28, .23, .99) both;
+    border: 0.1px solid1 #181818;
+  }
+
+  input:focus {
+    width: 160px;
+    transform: rotate(0);
+  }
+
+  .input:active {
+    background-color: #181818;
+
+    transition: 1.1s;
+  }
+
+
+  /* CSS */
+  button-67 {
+    align-items: center;
+    background: #f5f5fa;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: -10px -10px 30px 0 #fff, 10px 10px 30px 0 #1d0dca17;
+    box-sizing: border-box;
+    color: #2a1f62;
+    cursor: pointer;
+    display: flex;
+    font-family: "Cascadia Code", Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+    font-size: 1rem;
+    justify-content: center;
+    line-height: 1.5rem;
+    padding: 15px;
+    position: relative;
+    text-align: left;
+    transition: .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: pre;
+    width: max-content;
+    word-break: normal;
+    word-spacing: normal;
+  }
+
+  button-67:hover {
+    box-shadow: inset 1px 1px 4px #000000, inset -1px -1px 4px #000000, 1px 1px 4px #4b4b4b, -1px -1px 4px #000000;
+    background: linear-gradient(-45deg, #4e00b5, #ac0505, #c86f27, #00b5b5);
+    border: 2px solid #ff9100;
+  }
+
+  #button_3d782f09 {
+    gap: 23%;
+    vertical-align: bottom;
+    border-radius: 1px;
+    position: relative;
+    display: inline-flex;
+    margin: 10px 0px 5px 10px;
+    width: 110px;
+    height: 25px;
+    transition: 3s;
+    padding: 5px 15px;
+    font-size: 1rem;
+    border-radius: 10px;
+    background: #292929;
+    box-shadow: 2px 2px 4px #0a0a0a,
+      -2px -2px 4px #686868;
+    touch-action: manipulation;
+    line-height: 1.5rem;
+    top: 25px;
+    left: -10px;
+    background-image: url('data:image/svg+xml,%3Csvg role="img" viewBox="" xmlns="http://www.w3.org/2000/svg"%3E%3Ctitle%3EGoogle Chrome%3C/title%3E%3Cpath d="M12 0C8.21 0 4.831 1.757 2.632 4.501l3.953 6.848A5.454 5.454 0 0 1 12 6.545h10.691A12 12 0 0 0 12 0zM1.931 5.47A11.943 11.943 0 0 0 0 12c0 6.012 4.42 10.991 10.189 11.864l3.953-6.847a5.45 5.45 0 0 1-6.865-2.29zm13.342 2.166a5.446 5.446 0 0 1 1.45 7.09l.002.001h-.002l-5.344 9.257c.206.01.413.016.621.016 6.627 0 12-5.373 12-12 0-1.54-.29-3.011-.818-4.364zM12 16.364a4.364 4.364 0 1 1 0-8.728 4.364 4.364 0 0 1 0 8.728Z"/%3E%3C/svg%3E');
+
+
+    &:hover,
+    &:focus {
+
+      box-shadow: inset 1px 1px 4px #181818, inset -1px -1px 4px #2c2c2c, 1px 1px 4px #4b4b4b, -1px -1px 4px #000000;
+      background-color: #292929;
+      border: 0px solid #292929;
+      background: linear-gradient(-45deg, #4e00b5, #ac0505, #c86f27, #00b5b5);
+      background-size: 800% 400%;
+      transition: all 0.5s ease-in-out;
+      animation: gradient 5s infinite cubic-bezier(.62, .38, .23, .99) both;
+      padding-inline: 20px;
+
+      &:active,
+      &.active {
+
+        transition: 0.1s;
+      }
+    }
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  #button_4a0e9553 {
+    vertical-align: bottom;
+
+    position: relative;
+    display: inline-flex;
+    margin: 10px 0px 5px 10px;
+    width: 110px;
+    height: 25px;
+    transition: 3s;
+    padding: 5px 15px;
+    font-size: 18px;
+    border: 0px solid #323233;
+    border-radius: 10px;
+    background: #292929;
+    box-shadow: 2px 2px 4px #0a0a0a,
+      -2px -2px 4px #686868;
+    touch-action: manipulation;
+    line-height: 1.5rem;
+    top: 25px;
+    left: -10px;
+    background-image: url('data:image/svg+xml,%3Csvg role="img" viewBox="" xmlns="http://www.w3.org/2000/svg"%3E%3Ctitle%3EMicrosoft Bing%3C/title%3E%3Cpath d="M20.176 15.406a6.48 6.48 0 01-1.736 4.414c1.338-1.47.803-3.869-1.003-4.635-.862-.305-2.488-.85-3.367-1.158a1.834 1.834 0 01-.932-.818c-.381-.975-1.163-2.968-1.548-3.948-.095-.285-.31-.625-.265-.938.046-.598.724-1.003 1.276-.754l3.682 1.888c.621.292 1.305.692 1.796 1.172a6.486 6.486 0 012.097 4.777zm-1.44 1.888c-.264-1.194-1.135-1.744-2.216-2.028-1.527.902-4.853 2.878-6.952 4.13-1.103.68-2.13 1.35-2.919 1.242a2.866 2.866 0 01-2.77-2.325c-.012-.048-.008-.03-.001.01a6.4 6.4 0 00.947 2.653 6.498 6.498 0 005.486 3.022c1.908.062 3.536-1.153 5.099-2.096.292-.188.804-.496 1.332-.831l1.423-1.51c.553-.577.764-1.426.571-2.267zm-12.04 2.97c.422 0 .822-.1 1.173-.29.355-.215.964-.579 1.7-1.018L9.57 4.502c0-.99-.497-1.864-1.257-2.382-.08-.059-2.91-1.901-2.99-1.956-.605-.432-1.523.045-1.5.797v14.887l.417 2.36a2.488 2.488 0 002.455 2.056z"/%3E%3C/svg%3E');
+    border: 0px solid #242424;
+  }
+
+
+
+
+
+  #button_4a0e9553:hover {
+    box-shadow: inset 1px 1px 4px #181818, inset -1px -1px 4px #2c2c2c, 1px 1px 4px #4b4b4b, -1px -1px 4px #000000;
+    background-color: #292929;
+    border: 0px solid #292929;
+    background: linear-gradient(-45deg, #4e00b5, #ac0505, #c86f27, #00b5b5);
+    background-size: 800% 400%;
+    transition: all 0.5s ease-in-out;
+    animation: gradient 5s infinite cubic-bezier(.62, .38, .23, .99) both;
+    padding-inline: 20px;
+  }
+
+
+
+  #button_75846dd1 {
+    vertical-align: bottom;
+    border-radius: 1px;
+    position: relative;
+    display: inline-flex;
+    margin: 10px 0px 5px 10px;
+    width: 110px;
+    height: 25px;
+    transition: 3s;
+    padding: 5px 15px;
+    font-size: 1rem;
+    border-radius: 10px;
+    background: #292929;
+    box-shadow: 2px 2px 4px #0a0a0a,
+      -2px -2px 4px #686868;
+    touch-action: manipulation;
+    line-height: 1.5rem;
+    top: 25px;
+    left: -10px;
+    background-image: url('data:image/svg+xml,%3Csvg role="img" viewBox="" xmlns="http://www.w3.org/2000/svg"%3E%3Ctitle%3EYouTube%3C/title%3E%3Cpath d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/%3E%3C/svg%3E');
+    border: 0px solid #242424;
+  }
+
+
+
+  #button_75846dd1:hover {
+    box-shadow: inset 1px 1px 4px #181818, inset -1px -1px 4px #2c2c2c, 1px 1px 4px #4b4b4b, -1px -1px 4px #000000;
+    background-color: #292929;
+    border: 0px solid #292929;
+    background: linear-gradient(-45deg, #4e00b5, #ac0505, #c86f27, #00b5b5);
+    background-size: 800% 400%;
+    transition: all 0.5s ease-in-out;
+    animation: gradient 5s infinite cubic-bezier(.62, .38, .23, .99) both;
+    padding-inline: 20px;
+
+
+  }
+
+
+
+  #button_4a51962e {
+    vertical-align: bottom;
+    border-radius: 1px;
+    position: relative;
+    display: inline-flex;
+    margin: 10px 0px 5px 10px;
+    width: 110px;
+    height: 25px;
+    transition: 3s;
+    padding: 5px 15px;
+    font-size: 1rem;
+    border-radius: 10px;
+    background: #292929;
+    box-shadow: 2px 2px 4px #0a0a0a,
+      -2px -2px 4px #686868;
+    touch-action: manipulation;
+    line-height: 1.5rem;
+    top: 25px;
+    left: -10px;
+    background-image: url('data:image/svg+xml,%3Csvg role="img" viewBox="" xmlns="http://www.w3.org/2000/svg"%3E%3Ctitle%3EViaplay%3C/title%3E%3Cpath d="M1.2766 6.6383C.4742 8.2432 0 10.0669 0 12s.4742 3.7568 1.2766 5.3617L12 12ZM12 0C9.0456 0 6.3465 1.0578 4.231 2.845l12.5471 6.7477v4.8146L4.231 21.155C6.31 22.9422 9.0456 24 12 24c6.6383 0 12-5.3617 12-12S18.6383 0 12 0Z"/%3E%3C/svg%3E');
+    border: 0px solid #242424;
+  }
+
+
+
+
+
+  #button_4a51962e:hover {
+    box-shadow: inset 1px 1px 4px #181818, inset -1px -1px 4px #2c2c2c, 1px 1px 4px #4b4b4b, -1px -1px 4px #000000;
+    background-color: #292929;
+    border: 0px solid #292929;
+    background: linear-gradient(-45deg, #4e00b5, #ac0505, #c86f27, #00b5b5);
+    background-size: 800% 400%;
+    transition: all 0.5s ease-in-out;
+    animation: gradient 5s infinite cubic-bezier(.62, .38, .23, .99) both;
+    padding-inline: 20px;
+
+  }
+
+
+
+  #button_27de8c33 {
+    vertical-align: bottom;
+    border-radius: 2px;
+    position: relative;
+    display: inline-flex;
+    margin: 10px 0px 5px 10px;
+    width: 230px;
+    height: 30px;
+    transition: 3s;
+    padding: 10px 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 0px solid #242424;
+    background: #292929;
+    box-shadow: 2px 2px 4px #000000,
+      -2px -2px 4px #686868;
+    touch-action: manipulation;
+    line-height: 1.5rem;
+    top: 10px;
+
+  }
+
+  #button_27de8c33:hover {
+    box-shadow: inset 1px 1px 4px #181818, inset -1px -1px 4px #2c2c2c, 1px 1px 4px #4b4b4b, -1px -1px 4px #000000;
+    background-color: #292929;
+    border: 0px solid #292929;
+    background: linear-gradient(-45deg, #4e00b5, #ac0505, #c86f27, #00b5b5);
+    background-size: 800% 400%;
+    transition: all 0.5s ease-in-out;
+    animation: gradient 5s infinite cubic-bezier(.62, .38, .23, .99) both;
+    padding-inline: 20px;
+
+  }
+
+
+
+  #button_5b26006a {
+    vertical-align: bottom;
+    border-radius: 2px;
+    position: relative;
+    display: inline-flex;
+    margin: 10px 0px 5px 10px;
+    width: 230px;
+    height: 30px;
+    transition: 3s;
+    padding: 10px 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 0px solid #242424;
+    background: #292929;
+    box-shadow: 2px 2px 4px #000000,
+      -2px -2px 4px #686868;
+    touch-action: manipulation;
+    line-height: 1.5rem;
+    top: 10px;
+  }
+
+  #button_5b26006a:hover {
+    box-shadow: inset 1px 1px 4px #181818, inset -1px -1px 4px #2c2c2c, 1px 1px 4px #4b4b4b, -1px -1px 4px #000000;
+    background-color: #292929;
+    border: 0px solid #292929;
+    background: linear-gradient(-45deg, #4e00b5, #ac0505, #c86f27, #00b5b5);
+    background-size: 800% 400%;
+    transition: all 0.5s ease-in-out;
+    animation: gradient 5s infinite cubic-bezier(.62, .38, .23, .99) both;
+    padding-inline: 20px;
+
+  }
+
+
+
+  #button_4416cfc1 {
+    vertical-align: bottom;
+    border-radius: 2px;
+    position: relative;
+    display: inline-flex;
+    margin: 10px 0px 5px 10px;
+    width: 230px;
+    height: 30px;
+    transition: 3s;
+    padding: 10px 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 0px solid #242424;
+    background: #292929;
+    box-shadow: 2px 2px 4px #000000,
+      -2px -2px 4px #686868;
+    touch-action: manipulation;
+    line-height: 1.5rem;
+    top: 10px;
+  }
+
+  #button_4416cfc1:hover {
+    box-shadow: inset 1px 1px 4px #181818, inset -1px -1px 4px #2c2c2c, 1px 1px 4px #4b4b4b, -1px -1px 4px #000000;
+    background-color: #292929;
+    border: 0px solid #292929;
+    background: linear-gradient(-45deg, #4e00b5, #ac0505, #c86f27, #00b5b5);
+    background-size: 800% 400%;
+    transition: all 0.5s ease-in-out;
+    animation: gradient 5s infinite cubic-bezier(.62, .38, .23, .99) both;
+    padding-inline: 20px;
+
+  }
+
+
+
+  #button_6d176d02 {
+    vertical-align: bottom;
+    border-radius: 2px;
+    position: relative;
+    display: inline-flex;
+    margin: 10px 0px 5px 10px;
+    width: 230px;
+    height: 30px;
+    transition: 3s;
+    padding: 10px 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 0px solid #242424;
+    background: #292929;
+    box-shadow: 2px 2px 4px #000000,
+      -2px -2px 4px #686868;
+    touch-action: manipulation;
+    line-height: 1.5rem;
+    top: 10px;
+  }
+
+  #button_6d176d02:hover {
+    box-shadow: inset 1px 1px 4px #181818, inset -1px -1px 4px #2c2c2c, 1px 1px 4px #4b4b4b, -1px -1px 4px #000000;
+    background-color: #292929;
+    border: 0px solid #292929;
+    background: linear-gradient(-45deg, #4e00b5, #ac0505, #c86f27, #00b5b5);
+    background-size: 800% 400%;
+    transition: all 0.5s ease-in-out;
+    animation: gradient 5s infinite cubic-bezier(.62, .38, .23, .99) both;
+    padding-inline: 20px;
+
+  }
+
+
+
+  #button_18dde19f {
+    vertical-align: bottom;
+    border-radius: 2px;
+    position: relative;
+    display: inline-flex;
+    margin: 10px 0px 5px 10px;
+    width: 230px;
+    height: 30px;
+    transition: 3s;
+    padding: 10px 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 0px solid #242424;
+    background: #292929;
+    box-shadow: 2px 2px 4px #000000,
+      -2px -2px 4px #686868;
+    touch-action: manipulation;
+    line-height: 1.5rem;
+    top: 10px;
+  }
+
+  #button_18dde19f:hover {
+    box-shadow: inset 1px 1px 4px #181818, inset -1px -1px 4px #2c2c2c, 1px 1px 4px #4b4b4b, -1px -1px 4px #000000;
+    background-color: #292929;
+    border: 0px solid #292929;
+    background: linear-gradient(-45deg, #4e00b5, #ac0505, #c86f27, #00b5b5);
+    background-size: 800% 400%;
+    transition: all 0.5s ease-in-out;
+    animation: gradient 5s infinite cubic-bezier(.62, .38, .23, .99) both;
+    padding-inline: 20px;
+
+  }
+
+
+
+  #button_d09b3d8 {
+    vertical-align: bottom;
+    border-radius: 2px;
+    position: relative;
+    display: inline-flex;
+    margin: 10px 0px 5px 10px;
+    width: 230px;
+    height: 30px;
+    transition: 3s;
+    padding: 10px 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 0px solid #242424;
+    background: #292929;
+    box-shadow: 2px 2px 4px #000000,
+      -2px -2px 4px #686868;
+    touch-action: manipulation;
+    line-height: 1.5rem;
+    top: 10px;
+  }
+
+  #button_d09b3d8:hover {
+    box-shadow: inset 1px 1px 4px #181818, inset -1px -1px 4px #2c2c2c, 1px 1px 4px #4b4b4b, -1px -1px 4px #000000;
+    background-color: #292929;
+    border: 0px solid #292929;
+    background: linear-gradient(-45deg, #4e00b5, #ac0505, #c86f27, #00b5b5);
+    background-size: 800% 400%;
+    transition: all 0.5s ease-in-out;
+    animation: gradient 5s infinite cubic-bezier(.62, .38, .23, .99) both;
+    padding-inline: 20px;
+
+  }
+
+
+
+  #button_1fffb498 {
+    vertical-align: bottom;
+    border-radius: 2px;
+    position: relative;
+    display: inline-flex;
+    margin: 10px 0px 5px 10px;
+    width: 230px;
+    height: 30px;
+    transition: 3s;
+    padding: 10px 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 0px solid #242424;
+    background: #292929;
+    box-shadow: 2px 2px 4px #000000,
+      -2px -2px 4px #686868;
+    touch-action: manipulation;
+    line-height: 1.5rem;
+    top: 10px;
+  }
+
+  #button_1fffb498:hover {
+    box-shadow: inset 1px 1px 4px #181818, inset -1px -1px 4px #2c2c2c, 1px 1px 4px #4b4b4b, -1px -1px 4px #000000;
+    background-color: #292929;
+    border: 0px solid #292929;
+    background: linear-gradient(-45deg, #4e00b5, #ac0505, #c86f27, #00b5b5);
+    background-size: 800% 400%;
+    transition: all 0.5s ease-in-out;
+    animation: gradient 5s infinite cubic-bezier(.62, .38, .23, .99) both;
+    padding-inline: 20px;
+
+  }
+
+
+
+  #button_54755a93 {
+    vertical-align: bottom;
+    border-radius: 2px;
+    position: relative;
+    display: inline-flex;
+    margin: 10px 0px 5px 10px;
+    width: 230px;
+    height: 30px;
+    transition: 3s;
+    padding: 10px 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 0px solid #242424;
+    background: #292929;
+    box-shadow: 2px 2px 4px #000000,
+      -2px -2px 4px #686868;
+    touch-action: manipulation;
+    line-height: 1.5rem;
+    top: 10px;
+  }
+
+  #button_54755a93:hover {
+    box-shadow: inset 1px 1px 4px #181818, inset -1px -1px 4px #2c2c2c, 1px 1px 4px #4b4b4b, -1px -1px 4px #000000;
+    background-color: #292929;
+    border: 0px solid #292929;
+    background: linear-gradient(-45deg, #4e00b5, #ac0505, #c86f27, #00b5b5);
+    background-size: 800% 400%;
+    transition: all 0.5s ease-in-out;
+    animation: gradient 5s infinite cubic-bezier(.62, .38, .23, .99) both;
+    padding-inline: 20px;
+
+  }
+
+
+
+  #button_44cd065 {
+    vertical-align: bottom;
+    border-radius: 2px;
+    position: relative;
+    display: inline-flex;
+    margin: 10px 0px 5px 10px;
+    width: 230px;
+    height: 30px;
+    transition: 3s;
+    padding: 10px 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 0px solid #242424;
+    background: #292929;
+    box-shadow: 2px 2px 4px #000000,
+      -2px -2px 4px #686868;
+    touch-action: manipulation;
+    line-height: 1.5rem;
+    top: 10px;
+  }
+
+  #button_44cd065:hover {
+    box-shadow: inset 1px 1px 4px #181818, inset -1px -1px 4px #2c2c2c, 1px 1px 4px #4b4b4b, -1px -1px 4px #000000;
+    background-color: #292929;
+    border: 0px solid #292929;
+    background: linear-gradient(-45deg, #4e00b5, #ac0505, #c86f27, #00b5b5);
+    background-size: 800% 400%;
+    transition: all 0.5s ease-in-out;
+    animation: gradient 5s infinite cubic-bezier(.62, .38, .23, .99) both;
+    padding-inline: 20px;
+
+  }
+
+
+
+  #button_7048c57e {
+    vertical-align: bottom;
+    border-radius: 2px;
+    position: relative;
+    display: inline-flex;
+    margin: 10px 0px 5px 10px;
+    width: 230px;
+    height: 30px;
+    transition: 3s;
+    padding: 10px 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 0px solid #242424;
+    background: #292929;
+    box-shadow: 2px 2px 4px #000000,
+      -2px -2px 4px #686868;
+    touch-action: manipulation;
+    line-height: 1.5rem;
+    top: 10px;
+  }
+
+  #button_7048c57e:hover {
+    box-shadow: inset 1px 1px 4px #181818, inset -1px -1px 4px #2c2c2c, 1px 1px 4px #4b4b4b, -1px -1px 4px #000000;
+    background-color: #292929;
+    border: 0px solid #292929;
+    background: linear-gradient(-45deg, #4e00b5, #ac0505, #c86f27, #00b5b5);
+    background-size: 800% 400%;
+    transition: all 0.5s ease-in-out;
+    animation: gradient 5s infinite cubic-bezier(.62, .38, .23, .99) both;
+    padding-inline: 20px;
+
+  }
+
+
+
+  #button_40cee31b {
+    vertical-align: bottom;
+    border-radius: 2px;
+    position: relative;
+    display: inline-flex;
+    margin: 10px 0px 5px 10px;
+    width: 230px;
+    height: 30px;
+    transition: 3s;
+    padding: 10px 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 0px solid #242424;
+    background: #292929;
+    box-shadow: 2px 2px 4px #000000,
+      -2px -2px 4px #686868;
+    touch-action: manipulation;
+    line-height: 1.5rem;
+    top: 10px;
+  }
+
+  #button_40cee31b:hover {
+    box-shadow: inset 1px 1px 4px #181818, inset -1px -1px 4px #2c2c2c, 1px 1px 4px #4b4b4b, -1px -1px 4px #000000;
+    background-color: #292929;
+    border: 0px solid #292929;
+    background: linear-gradient(-45deg, #4e00b5, #ac0505, #c86f27, #00b5b5);
+    background-size: 800% 400%;
+    transition: all 0.5s ease-in-out;
+    animation: gradient 5s infinite cubic-bezier(.62, .38, .23, .99) both;
+    padding-inline: 20px;
+
+  }
+
+
+
+  #button_43bf97f7 {
+    vertical-align: bottom;
+    border-radius: 2px;
+    position: relative;
+    display: inline-flex;
+    margin: 10px 0px 5px 10px;
+    width: 230px;
+    height: 30px;
+    transition: 3s;
+    padding: 10px 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 0px solid #242424;
+    background: #292929;
+    box-shadow: 2px 2px 4px #000000,
+      -2px -2px 4px #686868;
+    touch-action: manipulation;
+    line-height: 1.5rem;
+    top: 10px;
+  }
+
+  #button_43bf97f7:hover {
+    box-shadow: inset 1px 1px 4px #181818, inset -1px -1px 4px #2c2c2c, 1px 1px 4px #4b4b4b, -1px -1px 4px #000000;
+    background-color: #292929;
+    border: 0px solid #292929;
+    background: linear-gradient(-45deg, #4e00b5, #ac0505, #c86f27, #00b5b5);
+    background-size: 800% 400%;
+    transition: all 0.5s ease-in-out;
+    animation: gradient 5s infinite cubic-bezier(.62, .38, .23, .99) both;
+    padding-inline: 20px;
+
+  }
+
+
+
+  #button_492a0a13 {
+    vertical-align: bottom;
+    border-radius: 2px;
+    position: relative;
+    display: inline-flex;
+    margin: 10px 0px 5px 10px;
+    width: 230px;
+    height: 30px;
+    transition: 3s;
+    padding: 10px 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 0px solid #242424;
+    background: #292929;
+    box-shadow: 2px 2px 4px #000000,
+      -2px -2px 4px #686868;
+    touch-action: manipulation;
+    line-height: 1.5rem;
+    top: 10px;
+  }
+
+  #button_492a0a13:hover {
+    box-shadow: inset 1px 1px 4px #181818, inset -1px -1px 4px #2c2c2c, 1px 1px 4px #4b4b4b, -1px -1px 4px #000000;
+    background-color: #292929;
+    border: 0px solid #292929;
+    background: linear-gradient(-45deg, #4e00b5, #ac0505, #c86f27, #00b5b5);
+    background-size: 800% 400%;
+    transition: all 0.5s ease-in-out;
+    animation: gradient 5s infinite cubic-bezier(.62, .38, .23, .99) both;
+    padding-inline: 20px;
+
+  }
+
+
+
+  #button_11641a92 {
+    vertical-align: bottom;
+    border-radius: 2px;
+    position: relative;
+    display: inline-flex;
+    margin: 10px 0px 5px 10px;
+    width: 230px;
+    height: 30px;
+    transition: 3s;
+    padding: 10px 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 0px solid #242424;
+    background: #292929;
+    box-shadow: 2px 2px 4px #000000,
+      -2px -2px 4px #686868;
+    touch-action: manipulation;
+    line-height: 1.5rem;
+    top: 10px;
+  }
+
+  #button_11641a92:hover {
+    box-shadow: inset 1px 1px 4px #181818, inset -1px -1px 4px #2c2c2c, 1px 1px 4px #4b4b4b, -1px -1px 4px #000000;
+    background-color: #292929;
+    border: 0px solid #292929;
+    background: linear-gradient(-45deg, #4e00b5, #ac0505, #c86f27, #00b5b5);
+    background-size: 800% 400%;
+    transition: all 0.5s ease-in-out;
+    animation: gradient 5s infinite cubic-bezier(.62, .38, .23, .99) both;
+    padding-inline: 20px;
+
+  }
+
+
+
+  #button_722b2bda {
+    vertical-align: bottom;
+    border-radius: 2px;
+    position: relative;
+    display: inline-flex;
+    margin: 10px 0px 5px 10px;
+    width: 230px;
+    height: 30px;
+    transition: 3s;
+    padding: 10px 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 0px solid #242424;
+    background: #292929;
+    box-shadow: 2px 2px 4px #000000,
+      -2px -2px 4px #686868;
+    touch-action: manipulation;
+    line-height: 1.5rem;
+    top: 10px;
+  }
+
+  #button_722b2bda:hover {
+    box-shadow: inset 1px 1px 4px #181818, inset -1px -1px 4px #2c2c2c, 1px 1px 4px #4b4b4b, -1px -1px 4px #000000;
+    background-color: #292929;
+    border: 0px solid #292929;
+    background: linear-gradient(-45deg, #4e00b5, #ac0505, #c86f27, #00b5b5);
+    background-size: 800% 400%;
+    transition: all 0.5s ease-in-out;
+    animation: gradient 5s infinite cubic-bezier(.62, .38, .23, .99) both;
+    padding-inline: 20px;
+
+  }
+
+
+  #button_5e6975ff {
+    vertical-align: bottom;
+    border-radius: 2px;
+    position: relative;
+    display: inline-flex;
+    margin: 10px 0px 5px 10px;
+    width: 230px;
+    height: 30px;
+    transition: 3s;
+    padding: 10px 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 0px solid #242424;
+    background: #292929;
+    box-shadow: 2px 2px 4px #000000,
+      -2px -2px 4px #686868;
+    touch-action: manipulation;
+    line-height: 1.5rem;
+    top: 10px;
+  }
+
+  #button_5e6975ff:hover {
+    box-shadow: inset 1px 1px 4px #181818, inset -1px -1px 4px #2c2c2c, 1px 1px 4px #4b4b4b, -1px -1px 4px #000000;
+    background-color: #292929;
+    border: 0px solid #292929;
+    background: linear-gradient(-45deg, #4e00b5, #ac0505, #c86f27, #00b5b5);
+    background-size: 800% 400%;
+    transition: all 0.5s ease-in-out;
+    animation: gradient 5s infinite cubic-bezier(.62, .38, .23, .99) both;
+    padding-inline: 20px;
+
+  }
+
+
+
+  #button_956f2ba {
+    vertical-align: bottom;
+    border-radius: 2px;
+    position: relative;
+    display: inline-flex;
+    margin: 10px 0px 5px 10px;
+    width: 230px;
+    height: 30px;
+    transition: 3s;
+    padding: 10px 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 0px solid #242424;
+    background: #292929;
+    box-shadow: 2px 2px 4px #000000,
+      -2px -2px 4px #686868;
+    touch-action: manipulation;
+    line-height: 1.5rem;
+    top: 10px;
+  }
+
+  #button_956f2ba:hover {
+    box-shadow: inset 1px 1px 4px #181818, inset -1px -1px 4px #2c2c2c, 1px 1px 4px #4b4b4b, -1px -1px 4px #000000;
+    background-color: #292929;
+    border: 0px solid #292929;
+    background: linear-gradient(-45deg, #4e00b5, #ac0505, #c86f27, #00b5b5);
+    background-size: 800% 400%;
+    transition: all 0.5s ease-in-out;
+    animation: gradient 5s infinite cubic-bezier(.62, .38, .23, .99) both;
+    padding-inline: 20px;
+
+  }
+
+
+
+  #button_14e88ee0 {
+    vertical-align: bottom;
+    border-radius: 2px;
+    position: relative;
+    display: inline-flex;
+    margin: 10px 0px 5px 10px;
+    width: 230px;
+    height: 30px;
+    transition: 3s;
+    padding: 10px 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 0px solid #242424;
+    background: #292929;
+    box-shadow: 2px 2px 4px #000000,
+      -2px -2px 4px #686868;
+    touch-action: manipulation;
+    line-height: 1.5rem;
+    top: 10px;
+  }
+
+  #button_14e88ee0:hover {
+    box-shadow: inset 1px 1px 4px #181818, inset -1px -1px 4px #2c2c2c, 1px 1px 4px #4b4b4b, -1px -1px 4px #000000;
+    background-color: #292929;
+    border: 0px solid #292929;
+    background: linear-gradient(-45deg, #4e00b5, #ac0505, #c86f27, #00b5b5);
+    background-size: 800% 400%;
+    transition: all 0.5s ease-in-out;
+    animation: gradient 5s infinite cubic-bezier(.62, .38, .23, .99) both;
+    padding-inline: 20px;
+
+  }
+
+
+
+  #button_318d4fa8 {
+    vertical-align: bottom;
+    position: relative;
+    display: inline-flex;
+    margin: 10px 0px 5px 10px;
+    width: 130px;
+    height: 30px;
+    transition: 3s;
+    padding: 1px 1px;
+    border-radius: 10px;
+    background: #292929;
+    box-shadow: 2px 2px 4px #0a0a0a,
+      -2px -2px 4px #696969;
+    top: 10px;
+    left: -10px;
+    border: 0px solid #000000;
+  }
+
+  #button_318d4fa8:hover {
+    box-shadow: inset 1px 1px 4px #181818, inset -1px -1px 4px #2c2c2c, 1px 1px 4px #4b4b4b, -1px -1px 4px #000000;
+    background-color: #292929;
+    border: 0px solid #292929;
+    background: linear-gradient(-45deg, #4e00b5, #ac0505, #c86f27, #00b5b5);
+    background-size: 800% 400%;
+    transition: all 0.5s ease-in-out;
+    animation: gradient 5s infinite cubic-bezier(.62, .38, .23, .99) both;
+    padding-inline: 20px;
+
+
+  }
+
+
+
+  #button_50693a0d {
+    vertical-align: bottom;
+    position: relative;
+    display: inline-flex;
+    margin: 10px 0px 5px 10px;
+    width: 130px;
+    height: 30px;
+    transition: 3s;
+    padding: 1px 1px;
+    border-radius: 10px;
+    background: #292929;
+    box-shadow: 2px 2px 4px #0a0a0a,
+      -2px -2px 4px #696969;
+    top: 10px;
+    left: -10px;
+    border: 0px solid #000000;
+  }
+
+  #button_50693a0d:hover {
+    box-shadow: inset 1px 1px 4px #181818, inset -1px -1px 4px #2c2c2c, 1px 1px 4px #4b4b4b, -1px -1px 4px #000000;
+    background-color: #292929;
+    border: 0px solid #292929;
+    background: linear-gradient(-45deg, #4e00b5, #ac0505, #c86f27, #00b5b5);
+    background-size: 800% 400%;
+    transition: all 0.5s ease-in-out;
+    animation: gradient 5s infinite cubic-bezier(.62, .38, .23, .99) both;
+    padding-inline: 20px;
+
+
+  }
+
+
+
+  #button_1b0e3570 {
+    vertical-align: bottom;
+    position: relative;
+    display: inline-flex;
+    margin: 10px 0px 5px 10px;
+    width: 130px;
+    height: 30px;
+    transition: 3s;
+    padding: 1px 1px;
+    border-radius: 10px;
+    background: #292929;
+    box-shadow: 2px 2px 4px #0a0a0a,
+      -2px -2px 4px #696969;
+    top: 10px;
+    left: -10px;
+    border: 0px solid #000000;
+  }
+
+  #button_1b0e3570:hover {
+    box-shadow: inset 1px 1px 4px #181818, inset -1px -1px 4px #2c2c2c, 1px 1px 4px #4b4b4b, -1px -1px 4px #000000;
+    background-color: #292929;
+    border: 0px solid #292929;
+    background: linear-gradient(-45deg, #4e00b5, #ac0505, #c86f27, #00b5b5);
+    background-size: 800% 400%;
+    transition: all 0.5s ease-in-out;
+    animation: gradient 5s infinite cubic-bezier(.62, .38, .23, .99) both;
+    padding-inline: 20px;
+
+
+  }
+
+
+
+  #button_690011d2 {
+    vertical-align: bottom;
+    position: relative;
+    display: inline-flex;
+    margin: 10px 0px 5px 10px;
+    width: 130px;
+    height: 30px;
+    transition: 3s;
+    padding: 1px 1px;
+    border-radius: 10px;
+    background: #292929;
+    box-shadow: 2px 2px 4px #0a0a0a,
+      -2px -2px 4px #696969;
+    top: 10px;
+    left: -10px;
+    border: 0px solid #000000;
+
+  }
+
+  #button_690011d2:hover {
+    box-shadow: inset 1px 1px 4px #181818, inset -1px -1px 4px #2c2c2c, 1px 1px 4px #4b4b4b, -1px -1px 4px #000000;
+    background-color: #292929;
+    border: 0px solid #292929;
+    background: linear-gradient(-45deg, #4e00b5, #ac0505, #c86f27, #00b5b5);
+    background-size: 800% 400%;
+    transition: all 0.5s ease-in-out;
+    animation: gradient 5s infinite cubic-bezier(.62, .38, .23, .99) both;
+    padding-inline: 20px;
+
+
+  }
+
+
+
+  #button_20275cb0 {
+    vertical-align: bottom;
+    position: relative;
+    display: inline-flex;
+    margin: 10px 0px 5px 10px;
+    width: 130px;
+    height: 30px;
+    transition: 3s;
+    padding: 1px 1px;
+    border-radius: 10px;
+    background: #292929;
+    box-shadow: 2px 2px 4px #0a0a0a,
+      -2px -2px 4px #696969;
+    top: 10px;
+    left: -10px;
+    border: 0px solid #000000;
+  }
+
+
+
+
+  #button_20275cb0:hover {
+    box-shadow: inset 1px 1px 4px #181818, inset -1px -1px 4px #2c2c2c, 1px 1px 4px #4b4b4b, -1px -1px 4px #000000;
+    background-color: #292929;
+    border: 0px solid #292929;
+    background: linear-gradient(-45deg, #4e00b5, #ac0505, #c86f27, #00b5b5);
+    background-size: 800% 400%;
+    transition: all 0.5s ease-in-out;
+    animation: gradient 5s infinite cubic-bezier(.62, .38, .23, .99) both;
+    padding-inline: 20px;
+
+
+  }
+
+
+
+  #button_521a477f {
+    vertical-align: bottom;
+    position: relative;
+    display: inline-flex;
+    margin: 10px 0px 5px 10px;
+    width: 130px;
+    height: 30px;
+    transition: 3s;
+    padding: 1px 1px;
+    border-radius: 10px;
+    background: #292929;
+    box-shadow: 2px 2px 4px #0a0a0a,
+      -2px -2px 4px #696969;
+    top: 10px;
+    left: -10px;
+    border: 0px solid #000000;
+  }
+
+
+
+
+  #button_521a477f:hover {
+    box-shadow: inset 1px 1px 4px #181818, inset -1px -1px 4px #2c2c2c, 1px 1px 4px #4b4b4b, -1px -1px 4px #000000;
+    background-color: #292929;
+    border: 0px solid #292929;
+    background: linear-gradient(-45deg, #4e00b5, #ac0505, #c86f27, #00b5b5);
+    background-size: 800% 400%;
+    transition: all 0.5s ease-in-out;
+    animation: gradient 5s infinite cubic-bezier(.62, .38, .23, .99) both;
+    padding-inline: 20px;
+
+
+  }
+
+
+
+  #button_21c85519 {
+    vertical-align: bottom;
+    position: relative;
+    display: inline-flex;
+    margin: 10px 0px 5px 10px;
+    width: 130px;
+    height: 30px;
+    transition: 3s;
+    padding: 1px 1px;
+    border-radius: 10px;
+    background: #292929;
+    box-shadow: 2px 2px 4px #0a0a0a,
+      -2px -2px 4px #696969;
+    top: 10px;
+    left: -10px;
+    border: 0px solid #000000;
+  }
+
+
+
+  #button_21c85519:hover {
+    box-shadow: inset 1px 1px 4px #181818, inset -1px -1px 4px #2c2c2c, 1px 1px 4px #4b4b4b, -1px -1px 4px #000000;
+    background-color: #292929;
+    border: 0px solid #292929;
+    background: linear-gradient(-45deg, #4e00b5, #ac0505, #c86f27, #00b5b5);
+    background-size: 800% 400%;
+    transition: all 0.5s ease-in-out;
+    animation: gradient 5s infinite cubic-bezier(.62, .38, .23, .99) both;
+    padding-inline: 20px;
+
+
+  }
+
+
+
+  #button_4b21ac47 {
+    vertical-align: bottom;
+    position: relative;
+    display: inline-flex;
+    margin: 10px 0px 5px 10px;
+    width: 130px;
+    height: 30px;
+    transition: 3s;
+    padding: 1px 1px;
+    border-radius: 10px;
+    background: #292929;
+    box-shadow: 2px 2px 4px #0a0a0a,
+      -2px -2px 4px #696969;
+    top: 10px;
+    left: -10px;
+    border: 0px solid #000000;
+  }
+
+
+
+  #button_4b21ac47:hover {
+    box-shadow: inset 1px 1px 4px #181818, inset -1px -1px 4px #2c2c2c, 1px 1px 4px #4b4b4b, -1px -1px 4px #000000;
+    background-color: #292929;
+    border: 0px solid #292929;
+    background: linear-gradient(-45deg, #4e00b5, #ac0505, #c86f27, #00b5b5);
+    background-size: 800% 400%;
+    transition: all 0.5s ease-in-out;
+    animation: gradient 5s infinite cubic-bezier(.62, .38, .23, .99) both;
+    padding-inline: 20px;
+
+  }
+
+
+
+  #button_1c58bb4 {
+    vertical-align: bottom;
+    position: relative;
+    display: inline-flex;
+    margin: 10px 0px 5px 10px;
+    width: 130px;
+    height: 30px;
+    transition: 3s;
+    padding: 1px 1px;
+    border-radius: 10px;
+    background: #292929;
+    box-shadow: 2px 2px 4px #0a0a0a,
+      -2px -2px 4px #696969;
+    top: 10px;
+    left: -10px;
+    border: 0px solid #000000;
+  }
+
+
+  #button_1c58bb4:hover {
+    box-shadow: inset 1px 1px 4px #181818, inset -1px -1px 4px #2c2c2c, 1px 1px 4px #4b4b4b, -1px -1px 4px #000000;
+    background-color: #292929;
+    border: 0px solid #292929;
+    background: linear-gradient(-45deg, #4e00b5, #ac0505, #c86f27, #00b5b5);
+    background-size: 800% 400%;
+    transition: all 0.5s ease-in-out;
+    animation: gradient 5s infinite cubic-bezier(.62, .38, .23, .99) both;
+    padding-inline: 20px;
+
+  }
+
+
+
+
+
+
+
+
+
+  /* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: none;
+    scrollbar-color: #000000 #424242;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #222222;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 1px;
+    border: 5px outset #141414;
+  }
+
+  .container_51330adb {
+    background-color: #2a1f6200;
+    display: flex;
+    top: auto;
+    box-shadow: #000;
+
+  }
+
+  .ng-app-embedded {
+
+
+
+    height: auto;
+    position: relative;
+    display: inline;
+    background-position: center;
+
+  }
+</style>
+
+</html>
+
+<body
+  style="background-color:#151a1c; background-image: url(https://i.imgur.com/GCQggle.jpeg); background-position:center center; background-size:cover; padding:0;  margin: 0;">
+  <div style="text-align:center;">
+    <div style="vertical-align: top; position: relative; display: inline-block; margin:0px 0px 6px 0px;width:100%; min-height:100px; max-width:850px; background-color:#c5c5c5; box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 0.588); 
+    border: 2px solid #242424f5;
+    border-radius:10px;
+background: #242424f5;
+            box-shadow: 2px 2px 4px #2b2b2b,
+            -2px -2px 4px  #555555;
+" id="container_75b17a31">
+      <div style="margin: 0px; display: block; " id="container_75b17a31_padding">
+        <div style="text-align:center;">
+          <a href="https://www.google.pl/" target="_blank" style="text-decoration:none">
+            <div id="button_3d782f09">
+              <div style="display: table; width: 100%; height: 100%;">
+                <div style="display: table-cell; vertical-align: middle;">
+                  <div style="text-align:top;">
+                    <span
+                      style="font-size:20px; font-family:'Courier New', Courier,monospace; color:#ff9100; text-shadow: 2px 2px 2px #000000; ">
+                      Google</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.bing.com/?scope=web&FORM=Z9LH" target="_blank" style="text-decoration:none">
+            <div id="button_4a0e9553">
+              <div style="display: table; width: 100%; height: 100%;">
+                <div style="display: table-cell; vertical-align: middle;">
+                  <div style="text-align:top;">
+                    <span
+                      style="font-size:18px; font-family:'Courier New', Courier,monospace; color:#ff9100; text-shadow: 1px 1px 2px #000000; ">
+                      Bing</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.youtube.com/" target="_blank" style="text-decoration:none">
+            <div id="button_75846dd1">
+              <div style="display: table; width: 100%; height: 100%;">
+                <div style="display: table-cell; vertical-align: middle;">
+                  <div style="text-align:top;">
+                    <span
+                      style="font-size:18px; font-family:'Courier New', Courier,monospace; color:#ff9100; text-shadow: 1px 1px 2px #000000; ">
+                      YouTube</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="https://filman.cc/online" target="_blank" style="text-decoration:none">
+            <div id="button_4a51962e">
+              <div style="display: table; width: 100%; height: 100%;">
+                <div style="display: table-cell; vertical-align: middle;">
+                  <div style="text-align:top;">
+                    <span
+                      style="font-size:18px; font-family:'Courier New', Courier,monospace; color:#ff9100; text-shadow: 1px 1px 2px #000000; ">
+                      Filman</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div style="clear:both"></div>
+      </div>
+    </div>
+  </div>
+  <div style="vertical-align: top; position:relative; display: inline-block; margin:0px 0px 10px 0px;width:100%; min-height:556px; max-width:850px; background-color:#c5c5c5; box-shadow: 2px 2px 2px 0px rgba(255, 255, 255, 0.588); 
+    border: 2px solid #242424f5;
+    border-radius:10px;
+background: #242424f5;
+            box-shadow: 2px 2px 4px #2b2b2b,
+            -2px -2px 4px  #555555;
+" id="container_62a75dad">
+    <div style="margin: 0px; display: block; " id="container_62a75dad_padding">
+      <a href="https://trans-logistics-eu.amazon.com/" target="_blank" style="text-decoration:none">
+        <div id="button_27de8c33">
+          <div style="display: table; width: 100%; height: 100%;">
+            <div style="display: table-cell; vertical-align: middle;">
+              <div style="text-align:left;">
+                <div
+                  style="font-size:18px; font-family:'Courier New', Courier,monospace; color:#d4d4d4; text-shadow: 1px 1px 2px #000000; ">
+                  🌏
+                  Amazon Logistyk</div>
+                <hr class="new1">
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="https://aws.amazon.com/chime/download/" target="_blank" style="text-decoration:none">
+        <div id="button_5b26006a">
+          <div style="display: table; width: 100%; height: 100%;">
+            <div style="display: table-cell; vertical-align: middle;">
+              <div style="text-align:left;">
+                <div
+                  style="font-size:18px; font-family:'Courier New', Courier,monospace; color:#d4d4d4; text-shadow: 1px 1px 2px #000000; ">
+                  🖄
+                  Amazon Chime</div>
+                <hr class="new1">
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <div
+        style="font-size:15pt; font-family:'Courier New', Courier,monospace; color:#d4d4d4; font-weight:bold; line-height: 1.5; text-shadow: 2px 2px 2px #ffffff; ">
+        <br />
+      </div>
+      <a href="https://trans-logistics-eu.amazon.com/ssp/dock/hrz/ob" target="_blank" style="text-decoration:none">
+        <div id="button_4416cfc1">
+          <div style="display: table; width: 100%; height: 100%;">
+            <div style="display: table-cell; vertical-align: middle;">
+              <div style="text-align:left;">
+                <div
+                  style="font-size:18px; font-family:'Courier New', Courier,monospace; color: #ff9100; text-shadow: 1px 1px 2px #000000; ">
+                  📦
+                  Outbound</div>
+                <hr class="new1">
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="https://quip-amazon.com/browse" target="_blank" style="text-decoration:none">
+        <div id="button_6d176d02">
+          <div style="display: table; width: 100%; height: 100%;">
+            <div style="display: table-cell; vertical-align: middle;">
+              <div style="text-align:left;">
+                <div
+                  style="font-size:18px; font-family:'Courier New', Courier,monospace; color:#00fcb0; text-shadow: 1px 1px 2px #000000; ">
+                  📁
+                  Quip</div>
+                <hr class="new1">
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <div
+        style="font-size:15pt; font-family:'Courier New', Courier, monospace; color:#d4d4d4; font-weight:bold; line-height: 1.5; text-shadow: 2px 2px 2px #000000; ">
+        <br />
+      </div>
+      <a href="https://trans-logistics-eu.amazon.com/yms/shipclerk/#/yard" target="_blank" style="text-decoration:none">
+        <div id="button_18dde19f">
+          <div style="display: table; width: 100%; height: 100%;">
+            <div style="display: table-cell; vertical-align: middle;">
+              <div style="text-align:left;">
+                <div
+                  style="font-size:18px; font-family:'Courier New', Courier,monospace; color: #ff9100; text-shadow: 1px 1px 2px #000000; ">
+                  🕋
+                  Yard Management</div>
+                <hr class="new1">
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="https://www.deepl.com/pl/translator" target="_blank" style="text-decoration:none">
+        <div id="button_d09b3d8">
+          <div style="display: table; width: 100%; height: 100%;">
+            <div style="display: table-cell; vertical-align: middle;">
+              <div style="text-align:left;">
+                <div
+                  style="font-size:18px; font-family:'Courier New', Courier,monospace; color:#d4d4d4; text-shadow: 1px 1px 2px #000000; ">
+                  📃
+                  Deepl</div>
+                <hr class="new1">
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <div
+        style="font-size:15pt; font-family:'Courier New', Courier, monospace; color:#C0C0C0; font-weight:bold; line-height: 1.5; text-shadow: 2px 2px 2px #ffffff; ">
+        <br />
+      </div>
+      <a href="https://trans-logistics-eu.amazon.com/yms/eventHistory#/eventReport?yard=WRO5" target="_blank"
+        style="text-decoration:none">
+        <div id="button_1fffb498">
+          <div style="display: table; width: 100%; height: 100%;">
+            <div style="display: table-cell; vertical-align: middle;">
+              <div style="text-align:left;">
+                <div
+                  style="font-size:18px; font-family:'Courier New', Courier,monospace; color: #ff9100; text-shadow: 1px 1px 2px #000000; ">
+                  💾
+                  Event History</div>
+                <hr class="new1">
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="https://permissions.amazon.com/" target="_blank" style="text-decoration:none">
+        <div id="button_54755a93">
+          <div style="display: table; width: 100%; height: 100%;">
+            <div style="display: table-cell; vertical-align: middle;">
+              <div style="text-align:left;">
+                <div
+                  style="font-size:18px; font-family:'Courier New', Courier,monospace; color:#d4d4d4; text-shadow: 1px 1px 2px #000000; ">
+                  👷
+                  Permissions</div>
+                <hr class="new1">
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <div
+        style="font-size:15pt; font-family:'Courier New', Courier,monospace; color:#585858; font-weight:bold; line-height: 1.5; text-shadow: 2px 2px 2px #ffffff; ">
+        <br />
+      </div>
+      <a href="https://trans-logistics-eu.amazon.com/yms/sesameGateConsole#/WRO5" target="_blank"
+        style="text-decoration:none">
+        <div id="button_44cd065">
+          <div style="display: table; width: 100%; height: 100%;">
+            <div style="display: table-cell; vertical-align: middle;">
+              <div style="text-align:left;">
+                <div
+                  style="font-size:18px; font-family:'Courier New', Courier,monospace; color: #ff9100; text-shadow: 1px 1px 2px #000000; ">
+                  🚚
+                  Sezam</div>
+                <hr class="new1">
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="https://issues.amazon.com/" target="_blank" style="text-decoration:none">
+        <div id="button_7048c57e">
+          <div style="display: table; width: 100%; height: 100%;">
+            <div style="display: table-cell; vertical-align: middle;">
+              <div style="text-align:left;">
+                <div
+                  style="font-size:18px; font-family:'Courier New', Courier,monospace; color:#d4d4d4; text-shadow: 1px 1px 2px #000000; ">
+                  📂
+                  Issues</div>
+                <hr class="new1">
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <div
+        style="font-size:15pt; font-family:'Courier New', Courier,monospace; color:#d4d4d4; font-weight:bold; line-height: 1.5; text-shadow: 2px 2px 2px #ffffff; ">
+        <br />
+      </div>
+      <a href="https://trans-logistics-eu.amazon.com/yms/yard360/appointments" target="_blank"
+        style="text-decoration:none">
+        <div id="button_40cee31b">
+          <div style="display: table; width: 100%; height: 100%;">
+            <div style="display: table-cell; vertical-align: middle;">
+              <div style="text-align:left;">
+                <div
+                  style="font-size:18px; font-family:'Courier New', Courier,monospace; color: aliceblue; text-shadow: 1px 1px 2px #000000; ">
+                  📊
+                  Yard 360</div>
+                <hr class="new1">
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="https://www.amazonlogistics.eu/gtdr/checklist" target="_blank" style="text-decoration:none">
+        <div id="button_43bf97f7">
+          <div style="display: table; width: 100%; height: 100%;">
+            <div style="display: table-cell; vertical-align: middle;">
+              <div style="text-align:left;">
+                <div
+                  style="font-size:18px; font-family:'Courier New', Courier,monospace; color: #00fcb0; text-shadow: 1px 1px 2px #000000; ">
+                  📲 GTDR</div>
+                <hr class="new1">
+              </div>
+            </div>
+          </div>
+        </div>
+      </a><br />
+      <a href="https://trans-logistics-eu.amazon.com/fmc/execution" target="_blank" style="text-decoration:none">
+        <div id="button_492a0a13">
+          <div style="display: table; width: 100%; height: 100%;">
+            <div style="display: table-cell; vertical-align: middle;">
+              <div style="text-align:left;">
+                <div
+                  style="font-size:18px; font-family:'Courier New', Courier,monospace; color: #00fcb0; text-shadow: 1px 1px 2px #000000; ">
+                  💻
+                  Fmc</div>
+                <hr class="new1">
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="https://line-panorama.wro5.amazon.com:8000/?lines=&gates=true&draw_directions_bot=true&direction=left&size=&label_size=&current_label_color=000000&free_label_color=FFFFFF&free_color=32CB00&current_color=F8FF00&danger_color=F56B00&alert_color=CB0000"
+        target="_blank" style="text-decoration:none">
+        <div id="button_11641a92">
+          <div style="display: table; width: 100%; height: 100%;">
+            <div style="display: table-cell; vertical-align: middle;">
+              <div style="text-align:left;">
+                <div
+                  style="font-size:18px; font-family:'Courier New', Courier,monospace; color: #F0F0F0; text-shadow: 1px 1px 2px #000000; ">
+                  📊
+                  ShipLine Panorama</div>
+                <hr class="new1">
+              </div>
+            </div>
+          </div>
+        </div>
+      </a><br />
+      <div style="color:#585858; line-height: 1.5; text-shadow: 1px 1px 2px #ffffff; "><br />
+        <hr class="new1">
+      </div>
+      <a href="https://fc-inbound-dock-hub-eu.aka.amazon.com/en_US/#/dockmaster/search/WRO5/appointmentSearch"
+        target="_blank" style="text-decoration:none">
+        <div id="button_722b2bda">
+          <div style="display: table; width: 100%; height: 100%;">
+            <div style="display: table-cell; vertical-align: middle;">
+              <div style="text-align:left;">
+                <div
+                  style="font-size:18px; font-family:'Courier New', Courier,monospace; color:#00d9ff; text-shadow: 1px 1px 2px #000000; ">
+                  ⚓
+                  Dockmaster</div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="https://fc-inbound-dock-hub-eu.aka.amazon.com/en_US/#/dockmaster/dayschedule/WRO5" target="_blank"
+        style="text-decoration:none">
+        <div id="button_5e6975ff">
+          <div style="display: table; width: 100%; height: 100%;">
+            <div style="display: table-cell; vertical-align: middle;">
+              <div style="text-align:left;">
+                <div
+                  style="font-size:18px; font-family:'Courier New', Courier,monospace; color:#00d9ff; text-shadow: 1px 1px 2px #000000; ">
+                  🔎
+                  Dockmaster
+                  Search </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </a><br />
+      <div style="color:#c5c5c5; line-height: 1.5; text-shadow: 1px 1px 2px #ffffff; "><br />
+
+      </div>
+      <a href="https://password-v2.corp.amazon.com/?ref_=pe_3453250_289608910" target="_blank"
+        style="text-decoration:none">
+        <div id="button_956f2ba">
+          <div style="display: table; width: 100%; height: 100%;">
+            <div style="display: table-cell; vertical-align: middle;">
+              <div style="text-align:left;">
+                <div
+                  style="font-size:18px; font-family:'Courier New', Courier,monospace; color: burlywood; text-shadow: 1px 1px 2px #000000; ">
+                  💻 Password Reset</div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="https://activate.amazon-corp.com/" target="_blank" style="text-decoration:none">
+          <div id="button_14e88ee0">
+            <div style="display: table; width: 100%; height: 100%;">
+              <div style="display: table-cell; vertical-align: middle;">
+                <div style="text-align:left;">
+                  <div
+                    style="font-size:18px; font-family:'Courier New', Courier,monospace; color: burlywood; text-shadow: 1px 1px 2px #000000; ">
+                    💻
+                    Device Activation</div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </a> <br />
+        <br />
+        <hr class="new1">
+        <div style="text-align:center;">
+          <div
+            style="vertical-align: top; position:relative; display: inline-block; width:100%; min-height:150px; max-width:900px; background: #3f3f3f00; "
+            id="container_35a78225">
+            <div style="margin: 10px; display: block; " id="container_35a78225_padding">
+              <div style="text-align:center;">
+                <div
+                  style="font-size:18px; font-family:'Courier New', Courier,monospace; color:#d4d4d4; line-height: 2.5; text-shadow: 1px 1px 2px #000000; ">
+                  Linki
+                  Tools</div>
+                <a href="https://quip.com/mlWpALvnGSt5/Pliki" target="_blank" style="text-decoration:none">
+                  <div id="button_318d4fa8">
+                    <div style="display: table; width: 100%; height: 100%;">
+                      <div style="display: table-cell; vertical-align: middle;">
+                        <div style="text-align:center;">
+                          <div
+                            style="font-size:18px; font-family:'Courier New', Courier,monospace; color:#d4d4d4; text-shadow: 1px 1px 2px #000000; ">
+                            Quip-Linki</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="https://edit-csv.net/" target="_blank" style="text-decoration:none">
+                  <div id="button_50693a0d">
+                    <div style="display: table; width: 100%; height: 100%;">
+                      <div style="display: table-cell; vertical-align: middle;">
+                        <div style="text-align:center;">
+                          <div
+                            style="font-size:18px; font-family:'Courier New', Courier,monospace; color:#d4d4d4; text-shadow: 1px 1px 2px #000000; ">
+                            Csv.Net</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="https://devtooly.com/" target="_search" style="text-decoration:none">
+                  <div id="button_1b0e3570">
+                    <div style="display: table; width: 100%; height: 100%;">
+                      <div style="display: table-cell; vertical-align: middle;">
+                        <div style="text-align:center;">
+                          <div
+                            style="font-size:18px; font-family:'Courier New', Courier,monospace; color:#d4d4d4; text-shadow: 1px 1px 2px #000000; ">
+                            Dev-tooly</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="https://htmlcheatsheet.com/" target="_blank" style="text-decoration:none">
+                  <div id="button_690011d2">
+                    <div style="display: table; width: 100%; height: 100%;">
+                      <div style="display: table-cell; vertical-align: middle;">
+                        <div style="text-align:center;">
+                          <div
+                            style="font-size:18px; font-family:'Courier New', Courier,monospace; color:#d4d4d4; text-shadow: 1px 1px 2px #000000; ">
+                            Html
+                            Tools</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div style="clear:both"></div>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:left;">
+          <div id="container_564289d1">
+            <div style="margin: 10px; display: block; " id="container_564289d1_padding">
+              <div style="text-align:center;">
+                <hr class="new1">
+                <div
+                  style="font-size:14pt; font-family:'Courier New', Courier,monospace; color:#d4d4d4; line-height: 2.5; text-shadow: 1px 1px 2px #000000; ">
+                  Other
+                  Tools</div>
+                <a href="https://addons.mozilla.org/pl/firefox/addon/ublock-origin/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search"
+                  target="_blank" style="text-decoration:none">
+                  <div id="button_20275cb0">
+                    <div style="display: table; width: 100%; height: 100%;">
+                      <div style="display: table-cell; vertical-align: middle;">
+                        <div style="text-align:center;">
+                          <div
+                            style="font-size:18px; font-family:'Courier New', Courier,monospace; color:#d4d4d4; text-shadow: 1px 1px 2px #000000; ">
+                            uBlockOrgin</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="https://temp-mail.org/pl/" target="_blank" style="text-decoration:none">
+                  <div id="button_521a477f">
+                    <div style="display: table; width: 100%; height: 100%;">
+                      <div style="display: table-cell; vertical-align: middle;">
+                        <div style="text-align:center;">
+                          <div
+                            style="font-size:18px; font-family:'Courier New', Courier,monospace; color:#d4d4d4; text-shadow: 1px 1px 2px #000000; ">
+                            TempEmail</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="https://addons.mozilla.org/pl/firefox/addon/autotube-youtube-nonstop/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search"
+                  target="_blank" style="text-decoration:none">
+                  <div id="button_21c85519">
+                    <div style="display: table; width: 100%; height: 100%;">
+                      <div style="display: table-cell; vertical-align: middle;">
+                        <div style="text-align:center;">
+                          <div
+                            style="font-size:18px; font-family:'Courier New', Courier,monospace; color:#d4d4d4; text-shadow: 1px 1px 2px #000000; ">
+                            NoStopYT</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="https://addons.mozilla.org/pl/firefox/addon/darkreader/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search"
+                  target="_blank" style="text-decoration:none">
+                  <div id="button_4b21ac47">
+                    <div style="display: table; width: 100%; height: 100%;">
+                      <div style="display: table-cell; vertical-align: middle;">
+                        <div style="text-align:center;">
+                          <div
+                            style="font-size:18px; font-family:'Courier New', Courier,monospace; color:#d4d4d4; text-shadow: 1px 1px 2px #000000; ">
+                            DarkReader</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div style="clear:both"></div>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center;">
+          <div
+            style="vertical-align: bottom; position:relative; display: grid; width:100%; min-height:150px; background:rgba(0, 0, 0, 0); "
+            id="container_25870703">
+            <div style="text-align:center;">
+              <a href="https://sites.google.com/view/skokiw5/ifarme" target="_blank" style="text-decoration:none">
+                <div id="button_1c58bb4">
+                  <div style="display: table; width: 100%; height: 100%;">
+                    <div style="display: table-cell; vertical-align: middle;">
+                      <div style="text-align:center;">
+                        <span
+                          style="font-size:18px; font-family:'Courier New', Courier,monospace; color:#a0a0a0; text-shadow: 1px 1px 2px #000000; ">
+                          Panel</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <hr class="new1">
+        <div
+          style="font-size:14pt; font-family:'Courier New', Courier,monospace; color:#646464; text-shadow: 1px 1px 2px #000000; ">
+          ©
+          2024, Web Services, Inc. or its affiliates. All rights reserved.</div>
+        <div style="text-align:left;">
+          <hr class="new1">
+          <div>
+
+            <head>
+            </head>
+          </div>
+          <meta charset="UTF-8">
+          <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          <meta http-equiv="X-UA-Compatible" content="ie=edge">
+          <title>htmlmenu Menu</title>
+          <style>
+            body {
+              margin: 0;
+              padding: 0;
+            }
+          </style>
+        </div>
+        <style>
+          /* HTML MENU HEADER */
+
+          .htmlmenu-header {
+            position: relative;
+            font-size: 16px;
+            -webkit-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+            box-sizing: border-box;
+
+
+          }
+
+          .htmlmenu-header *,
+          .htmlmenu-header *:before,
+          .htmlmenu-header *:after {
+            box-sizing: border-box;
+          }
+
+          /* HTML MENU CONTAINER */
+
+          .htmlmenu-container {
+            position: relative;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1280px;
+          }
+
+          /* HTML MENU HEADER SHADOW */
+
+          .htmlmenu-header-shadow {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 30px;
+            overflow: hidden;
+            z-index: 1;
+          }
+
+          .htmlmenu-header-shadow:before {
+            display: block;
+            position: relative;
+            content: "";
+            width: 100%;
+            height: 60px;
+            top: -60px;
+            border-radius: 50%;
+            background: #181818;
+            box-shadow: 2px 2px 4px #0a0a0a,
+              -2px -2px 4px #262626;
+
+          }
+
+          /* HTML MENU LOGO */
+
+          .htmlmenu-logo {
+            padding: 0 0 0 30px;
+            text-align: left;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            height: 70px;
+          }
+
+          .htmlmenu-logo a {
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: #6e6e6e;
+          }
+
+          .htmlmenu-logo a img {
+            display: inline-block;
+            vertical-align: middle;
+          }
+
+          /* HTML MENU TOGGLE */
+
+          .htmlmenu-toggle {
+            position: absolute;
+            width: 0;
+            height: 0;
+            margin: 0;
+            opacity: 0;
+            pointer-events: none;
+            visibility: hidden;
+          }
+
+          .htmlmenu-toggle+label {
+            position: absolute;
+            top: 26.25px;
+            right: 30px;
+            width: 20px;
+            height: 16px;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            cursor: pointer;
+            -webkit-transition: -webkit-transform 2000ms ease-out;
+            -webkit-transition: transform 2000ms ease-out;
+            transition: transform 2000ms ease-out;
+          }
+
+          .htmlmenu-toggle+label>span {
+            display: block;
+            background-color: #292929;
+            border-radius: 2px;
+            width: 100%;
+            height: 2px;
+            -webkit-transition: all 200ms;
+            transition: all 200ms;
+          }
+
+          .htmlmenu-toggle+label>span:last-child {
+            -webkit-transform-origin: left;
+            -ms-transform-origin: left;
+            transform-origin: left;
+          }
+
+          .htmlmenu-toggle:checked+label {
+            -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+          }
+
+          .htmlmenu-toggle:checked+label>span:first-child {
+            width: 50%;
+            -webkit-transform: rotate(-90deg) translateX(3px);
+            -ms-transform: rotate(-90deg) translateX(3px);
+            transform: rotate(-90deg) translateX(3px);
+            -webkit-transform-origin: right;
+            -ms-transform-origin: right;
+            transform-origin: right;
+          }
+
+          .htmlmenu-toggle:checked+label>span:last-child {
+            width: 50%;
+            -webkit-transform: rotate(-90deg) translateX(-3px) translateY(10px);
+            -ms-transform: rotate(-90deg) translateX(-3px) translateY(10px);
+            transform: rotate(-90deg) translateX(-3px) translateY(10px);
+          }
+
+          .htmlmenu-toggle:checked~.htmlmenu-menu {
+            padding-bottom: 20px;
+          }
+
+          .htmlmenu-toggle:checked~.htmlmenu-menu>ul {
+            display: block;
+          }
+
+          .htmlmenu-toggle:checked~.htmlmenu-menu>ul>li>input:checked~a {
+            color: #F2980F;
+          }
+
+          .htmlmenu-toggle:checked~.htmlmenu-menu input:checked~ul {
+            display: block;
+            background-color: #00000000;
+          }
+
+          /* HTML MENU MENU */
+
+          .htmlmenu-menu {
+            line-height: 1.5;
+          }
+
+          .htmlmenu-menu ul {
+            margin: -1px;
+            padding: 2px;
+            display: none;
+            list-style: none;
+          }
+
+          .htmlmenu-menu li {
+            position: relative;
+            list-style: none;
+          }
+
+          .htmlmenu-menu li>a {
+            display: block;
+            font-family: sans-serif;
+            color: #6d6d6d;
+            text-shadow: 1px 1px 2px #000;
+            padding: 15px 30px;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            position: relative;
+            -webkit-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+          }
+
+          .htmlmenu-menu input[type=checkbox] {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            margin: 10px;
+            opacity: 10px;
+            pointer-events: none;
+            visibility: visible;
+          }
+
+          .htmlmenu-menu input[type=checkbox]:checked~a>label {
+            -webkit-transform: rotate(-90deg);
+            -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+          }
+
+          .htmlmenu-menu input[type=checkbox]:checked~a>label:before {
+            opacity: 0;
+          }
+
+          .htmlmenu-menu label {
+            display: block;
+            position: absolute;
+            cursor: pointer;
+            right: 25px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            height: 32px;
+            width: 32px;
+            line-height: 1.5;
+            text-align: center;
+            z-index: 1;
+            -webkit-transition: -webkit-transform .2s;
+            -webkit-transition: transform .2s;
+            transition: transform .2s;
+          }
+
+          .htmlmenu-menu label:before,
+          .htmlmenu-menu label:after {
+            position: absolute;
+            content: "";
+            width: 45%;
+            height: 1px;
+            background-color: #00000000;
+            display: block;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            -webkit-transition: -webkit-transform .4s, opacity .4s;
+            -webkit-transition: transform .4s, opacity .4s;
+            transition: transform .4s, opacity .4s;
+            opacity: 1;
+          }
+
+          .htmlmenu-menu label:after {
+            -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+          }
+
+          .htmlmenu-menu>ul>li>a {
+            font-size: 18px;
+            font-style: normal;
+            font-weight: bold;
+            text-transform: uppercase;
+
+          }
+
+          .htmlmenu-menu>ul>li:hover>a {
+            color: #F2980F;
+          }
+
+          .htmlmenu-menu>ul>li.htmlmenu-menu-current>a {
+            color: #F2980F;
+            text-shadow: 1px 1px 2px #000
+          }
+
+          .htmlmenu-menu ul ul li>a {
+            font-size: 18px;
+            font-style: normal;
+            font-weight: normal;
+            text-transform: none;
+            padding: 1px 1px;
+            background: #292929;
+
+          }
+
+          @media (min-width:1024px) {
+
+            /* HTML MENU HEADER */
+            .htmlmenu-header {
+              -webkit-transition: all 0.1s ease-in-out;
+              transition: all 0.1s ease-in-out;
+              position: fixed;
+              left: 0;
+              right: 0;
+              width: 100%;
+              height: 37px;
+              top: 0;
+              z-index: 99999;
+            }
+
+            .htmlmenu-header.htmlmenu-header-transparent-dark {
+              background: transparent;
+              position: fixed;
+              left: 0;
+              right: 0;
+              height: 37px;
+              top: 0;
+            }
+
+            .htmlmenu-header.htmlmenu-header-transparent-dark .htmlmenu-logo a {
+              color: #6e6e6e;
+            }
+
+            .htmlmenu-header.htmlmenu-header-transparent-dark .htmlmenu-menu>ul>li>a,
+            .htmlmenu-header.htmlmenu-header-transparent-dark .htmlmenu-toggle:checked~.htmlmenu-menu>ul>li>input:checked~a {
+              color: #F0F0F0;
+            }
+
+            .htmlmenu-header.htmlmenu-header-transparent-dark .htmlmenu-menu>ul>li>a>label {
+              border-color: #F0F0F0;
+            }
+
+            .htmlmenu-header.htmlmenu-header-transparent-dark .htmlmenu-menu>ul>li:hover>a,
+            .htmlmenu-header.htmlmenu-header-transparent-dark .htmlmenu-toggle:checked~.htmlmenu-menu>ul>li:hover>input:checked~a,
+            .htmlmenu-header.htmlmenu-header-transparent-dark .htmlmenu-menu>ul>li.htmlmenu-menu-current>a,
+            .htmlmenu-header.htmlmenu-header-transparent-dark .htmlmenu-toggle:checked~.htmlmenu-menu>ul>li.htmlmenu-menu-current>input:checked~a {
+              color: #6e6e6e;
+            }
+
+            .htmlmenu-header.htmlmenu-header-transparent-dark .htmlmenu-menu.htmlmenu-menu-style-2>ul>li:hover>a>label,
+            .htmlmenu-header.htmlmenu-header-transparent-dark .htmlmenu-menu.htmlmenu-menu-style-2>ul>li.htmlmenu-menu-current>a>label {
+              border-color: #6e6e6e;
+            }
+
+            .htmlmenu-header.htmlmenu-header-transparent-dark+.htmlmenu-header-spacer {
+              height: 0;
+            }
+
+            .htmlmenu-header.htmlmenu-header-transparent-dark>.htmlmenu-header-shadow {
+              opacity: 0;
+            }
+
+            .htmlmenu-header.htmlmenu-header-transparent-dark.htmlmenu-header-scrolled {
+              background: rgba(58, 61, 63, 1);
+            }
+
+            .htmlmenu-header.htmlmenu-header-transparent-dark.htmlmenu-header-scrolled .htmlmenu-logo a {
+              color: #A6A9AA;
+            }
+
+            .htmlmenu-header.htmlmenu-header-transparent-dark.htmlmenu-header-scrolled .htmlmenu-menu>ul>li>a,
+            .htmlmenu-header.htmlmenu-header-transparent-dark.htmlmenu-header-scrolled .htmlmenu-toggle:checked~.htmlmenu-menu>ul>li>input:checked~a {
+              color: #A6A9AA;
+            }
+
+            .htmlmenu-header.htmlmenu-header-transparent-dark.htmlmenu-header-scrolled .htmlmenu-menu>ul>li>a>label {
+              border-color: #A6A9AA;
+            }
+
+            .htmlmenu-header.htmlmenu-header-transparent-dark.htmlmenu-header-scrolled .htmlmenu-menu>ul>li:hover>a,
+            .htmlmenu-header.htmlmenu-header-transparent-dark.htmlmenu-header-scrolled .htmlmenu-toggle:checked~.htmlmenu-menu>ul>li:hover>input:checked~a,
+            .htmlmenu-header.htmlmenu-header-transparent-dark.htmlmenu-header-scrolled .htmlmenu-menu>ul>li.htmlmenu-menu-current>a,
+            .htmlmenu-header.htmlmenu-header-transparent-dark.htmlmenu-header-scrolled .htmlmenu-toggle:checked~.htmlmenu-menu>ul>li.htmlmenu-menu-current>input:checked~a {
+              color: #000000;
+            }
+
+            .htmlmenu-header.htmlmenu-header-transparent-dark.htmlmenu-header-scrolled .htmlmenu-menu.htmlmenu-menu-style-3>ul>li:hover>a>label,
+            .htmlmenu-header.htmlmenu-header-transparent-dark.htmlmenu-header-scrolled .htmlmenu-menu.htmlmenu-menu-style-3>ul>li.htmlmenu-menu-current>a>label {
+              border-color: #3A3D3F;
+            }
+
+            .htmlmenu-header.htmlmenu-header-transparent-dark.htmlmenu-header-scrolled>.htmlmenu-header-shadow {
+              opacity: 1;
+            }
+
+            .htmlmenu-header.htmlmenu-header-transparent-light {
+              background: transparent;
+              position: fixed;
+              left: 0;
+              right: 0;
+              height: 47px;
+              top: 0;
+            }
+
+            .htmlmenu-header.htmlmenu-header-transparent-light .htmlmenu-logo a {
+              color: #6e6e6e;
+            }
+
+            .htmlmenu-header.htmlmenu-header-transparent-light .htmlmenu-menu>ul>li>a,
+            .htmlmenu-header.htmlmenu-header-transparent-light .htmlmenu-toggle:checked~.htmlmenu-menu>ul>li>input:checked~a {
+              color: #3A3A3A;
+            }
+
+            .htmlmenu-header.htmlmenu-header-transparent-light .htmlmenu-menu>ul>li:hover>a,
+            .htmlmenu-header.htmlmenu-header-transparent-light .htmlmenu-toggle:checked~.htmlmenu-menu>ul>li:hover>input:checked~a,
+            .htmlmenu-header.htmlmenu-header-transparent-light .htmlmenu-menu>ul>li.htmlmenu-menu-current>a,
+            .htmlmenu-header.htmlmenu-header-transparent-light .htmlmenu-toggle:checked~.htmlmenu-menu>ul>li.htmlmenu-menu-current>input:checked~a {
+              color: #000000;
+            }
+
+            .htmlmenu-header.htmlmenu-header-transparent-light .htmlmenu-menu>ul>li>a>label {
+              border-color: #3A3A3A;
+            }
+
+            .htmlmenu-header.htmlmenu-header-transparent-light .htmlmenu-menu.htmlmenu-menu-style-2>ul>li:hover>a>label,
+            .htmlmenu-header.htmlmenu-header-transparent-light .htmlmenu-menu.htmlmenu-menu-style-2>ul>li.htmlmenu-menu-current>a>label {
+              border-color: #A6A9AA;
+            }
+
+            .htmlmenu-header.htmlmenu-header-transparent-light+.htmlmenu-header-spacer {
+              height: 0;
+            }
+
+            .htmlmenu-header.htmlmenu-header-transparent-light>.htmlmenu-header-shadow {
+              opacity: 0;
+            }
+
+            .htmlmenu-header.htmlmenu-header-transparent-light.htmlmenu-header-scrolled {
+              background: rgba(58, 61, 63, 1);
+            }
+
+            .htmlmenu-header.htmlmenu-header-transparent-light.htmlmenu-header-scrolled .htmlmenu-logo a {
+              color: #A6A9AA;
+            }
+
+            .htmlmenu-header.htmlmenu-header-transparent-light.htmlmenu-header-scrolled .htmlmenu-menu>ul>li>a,
+            .htmlmenu-header.htmlmenu-header-transparent-light.htmlmenu-header-scrolled .htmlmenu-toggle:checked~.htmlmenu-menu>ul>li>input:checked~a {
+              color: #A6A9AA;
+            }
+
+            .htmlmenu-header.htmlmenu-header-transparent-light.htmlmenu-header-scrolled .htmlmenu-menu>ul>li:hover>a,
+            .htmlmenu-header.htmlmenu-header-transparent-light.htmlmenu-header-scrolled .htmlmenu-toggle:checked~.htmlmenu-menu>ul>li:hover>input:checked~a,
+            .htmlmenu-header.htmlmenu-header-transparent-light.htmlmenu-header-scrolled .htmlmenu-menu>ul>li.htmlmenu-menu-current>a,
+            .htmlmenu-header.htmlmenu-header-transparent-light.htmlmenu-header-scrolled .htmlmenu-toggle:checked~.htmlmenu-menu>ul>li.htmlmenu-menu-current>input:checked~a {
+              color: #F2980F;
+            }
+
+            .htmlmenu-header.htmlmenu-header-transparent-light.htmlmenu-header-scrolled .htmlmenu-menu>ul>li>a>label {
+              border-color: #A6A9AA;
+            }
+
+            .htmlmenu-header.htmlmenu-header-transparent-light.htmlmenu-header-scrolled .htmlmenu-menu.htmlmenu-menu-style-3>ul>li:hover>a>label,
+            .htmlmenu-header.htmlmenu-header-transparent-light.htmlmenu-header-scrolled .htmlmenu-menu.htmlmenu-menu-style-3>ul>li.htmlmenu-menu-current>a>label {
+              border-color: #3A3D3F;
+            }
+
+            .htmlmenu-header.htmlmenu-header-transparent-light.htmlmenu-header-scrolled>.htmlmenu-header-shadow {
+              opacity: 1;
+              pointer-events: auto;
+              visibility: visible;
+            }
+
+            /* HTML MENU CONTAINER */
+            .htmlmenu-container {
+              height: 80px;
+
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-pack: justify;
+              -webkit-justify-content: space-between;
+              -ms-flex-pack: justify;
+              justify-content: space-between;
+
+            }
+
+            /* HTML MENU HEADER SHADOW */
+            .htmlmenu-header-shadow {
+
+              z-index: -2;
+
+            }
+
+            /* HTML MENU LOGO */
+            .htmlmenu-logo {
+              position: relative;
+              padding: 0;
+              top: 50%;
+              -webkit-transform: translateY(-50%);
+              -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+              line-height: 70px;
+
+            }
+
+            .htmlmenu-logo a {
+              line-height: unset;
+            }
+
+            .htmlmenu-logo a img {
+              display: block;
+            }
+
+            .htmlmenu-header-spacer {
+              height: 70px;
+            }
+
+            .htmlmenu-toggle:checked~.htmlmenu-menu {
+              padding-bottom: 0;
+            }
+
+            .htmlmenu-toggle:checked~.htmlmenu-menu input:checked~ul {
+              background: rgba(58, 61, 63, 1);
+            }
+
+            .htmlmenu-toggle:checked~.htmlmenu-menu>ul {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+            }
+
+            .htmlmenu-toggle:checked~.htmlmenu-menu>ul>li>input:checked~a {
+              color: #6e6e6e;
+              background-color: transparent;
+            }
+
+            .htmlmenu-toggle:checked~.htmlmenu-menu>ul>li:hover>input:checked~a,
+            .htmlmenu-toggle:checked~.htmlmenu-menu>ul>li.htmlmenu-menu-current>input:checked~a {
+              color: #F2980F;
+            }
+
+            .htmlmenu-toggle+label {
+              opacity: 0;
+              pointer-events: none;
+            }
+
+            /* HTML MENU MENU */
+            .htmlmenu-menu {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              flex: 1;
+              ;
+            }
+
+            .htmlmenu-menu ul {
+              display: block;
+              font-size: 0;
+            }
+
+            .htmlmenu-menu li:hover>a {
+              opacity: 1;
+              color: #F2980F;
+            }
+
+
+
+
+            .htmlmenu-menu :hover {
+              box-shadow: inset 1px 1px 4px #000000, inset -1px -1px 41px #000000, 1px 1px 4px #4b4b4b, -1px -1px 4px #000000;
+              background-color: #292929;
+              border: none;
+              transition: 0.1s;
+
+            }
+
+
+            .htmlmenu-menu label {
+              bottom: 3px;
+              right: 5px;
+              height: 6px;
+              width: 6px;
+              border-style: solid;
+              border-color: #000 #ffa600;
+              border-width: 0px 1px 1px 0px;
+              -webkit-transform: rotate(-45deg) !important;
+              -ms-transform: rotate(-45deg) !important;
+              transform: rotate(-45deg) !important;
+            }
+
+            .htmlmenu-menu label:before,
+            .htmlmenu-menu label:after {
+              content: none;
+            }
+
+            .htmlmenu-menu>ul {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              flex: 5;
+              ;
+            }
+
+            .htmlmenu-menu>ul>li {
+              display: inline-block;
+              flex: 5;
+              ;
+            }
+
+            .htmlmenu-menu>ul>li>a {
+              position: relative;
+              height: 80px;
+              line-height: 90px;
+              white-space: nowrap;
+              padding: 10px 10px;
+              background: #292929;
+              box-shadow: 2px 2px 4px #0a0a0a,
+                -2px -2px 4px #262626;
+
+            }
+
+            .htmlmenu-menu>ul>li:last-child>a {
+              padding: 0 0 0 20p;
+            }
+
+            .htmlmenu-menu>ul>li>a>label {
+              position: relative;
+              display: inline-block;
+              margin-left: 15px;
+              right: inherit;
+              bottom: inherit;
+              vertical-align: middle;
+              top: -2px;
+              -webkit-transform: rotate(45deg) !important;
+              -ms-transform: rotate(45deg) !important;
+              transform: rotate(45deg) !important;
+              border-color: #ffa600 #000;
+            }
+
+            .htmlmenu-menu li>ul {
+              border-top-width: 0px;
+              border-top-style: solid;
+              border-top-color: #F2980F;
+              display: block;
+              position: absolute;
+              width: 250px;
+
+              padding: 0px 0px 0px 25px;
+
+              -webkit-transition: all 0.1s ease-in-out;
+              transition: all 0.1s ease-in-out;
+              z-index: 1;
+              will-change: transform, opacity;
+              pointer-events: none;
+              visibility: hidden;
+              opacity: 0;
+              top: 100%;
+              left: 0;
+              background: #292929;
+              box-shadow: 2px 2px 4px #0a0a0a,
+                -2px -2px 4px #262626;
+
+            }
+
+            .htmlmenu-menu li:hover>ul {
+              opacity: 1;
+              pointer-events: visible;
+              visibility: visible;
+              box-shadow: inset 1px 1px 4px #000000, inset -1px -1px 41px #000000, 1px 1px 4px #4b4b4b, -1px -1px 4px #000000;
+              background-color: #4b4b4b;
+              background: #1818185b;
+              box-shadow: 2px 2px 4px #0a0a0a,
+                -2px -2px 4px #262626;
+            }
+
+            .htmlmenu-menu li>ul ul {
+              left: 100%;
+              top: 5px;
+            }
+
+            .htmlmenu-menu li>ul label {
+              position: absolute;
+              right: 20px;
+            }
+
+            .htmlmenu-menu li.htmlmenu-submenu-right>ul {
+              left: inherit;
+              right: 0;
+            }
+
+            .htmlmenu-menu li.htmlmenu-submenu-right>ul ul {
+              left: -100%;
+              right: 0;
+            }
+
+            .htmlmenu-menu ul ul li>a {
+              padding: 8px 10px;
+              font-size: 18px;
+              color: #6e6e6e;
+
+            }
+
+            .htmlmenu-menu.htmlmenu-submenu-bordered ul ul li:after {
+              position: absolute;
+              content: "";
+              bottom: 1px;
+              left: 1px;
+              right: 1px;
+              height: 2px;
+              box-shadow: inset 1px 1px 4px #000000, inset -1px -1px 41px #000000, 1px 1px 4px #4b4b4b, -1px -1px 4px #000000;
+              background-color: #4b4b4b;
+            }
+
+            .htmlmenu-menu.htmlmenu-submenu-bordered ul ul li:last-child:after {
+              display: none;
+            }
+
+            .htmlmenu-menu.htmlmenu-menu-style-1>ul>li>a:before {
+              position: absolute;
+              content: "";
+              top: 50%;
+              right: 0;
+              width: 1px;
+              height: 20px;
+              background: rgba(166, 169, 170, 0.15);
+              -webkit-transform: translateY(-50%);
+              -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+            }
+
+            .htmlmenu-menu.htmlmenu-menu-style-1>ul>li:last-child>a:before {
+              display: none;
+            }
+
+            .htmlmenu-menu.htmlmenu-menu-style-1>ul>li:hover>a,
+            .htmlmenu-menu.htmlmenu-menu-style-1>ul>li.htmlmenu-menu-current>a {
+              color: #F2980F !important;
+              background-color: transparent !important;
+            }
+
+            .htmlmenu-menu.htmlmenu-menu-style-2>ul>li>a:after {
+              position: absolute;
+              content: '';
+              left: 0;
+              bottom: -3px;
+              width: 100%;
+              height: 3px;
+              background: #F2980F;
+              opacity: 0;
+              z-index: 0;
+              -webkit-transition: opacity 0.1s ease-in-out;
+              transition: opacity 0.1s ease-in-out;
+            }
+
+            .htmlmenu-menu.htmlmenu-menu-style-2>ul>li:last-child>a {
+              padding: 0 20px;
+            }
+
+            .htmlmenu-menu.htmlmenu-menu-style-2>ul>li:hover>a,
+            .htmlmenu-menu.htmlmenu-menu-style-2>ul>li.htmlmenu-menu-current>a {
+              color: #A6A9AA !important;
+              background-color: #45494b !important;
+            }
+
+            .htmlmenu-menu.htmlmenu-menu-style-2>ul>li:hover>a:after,
+            .htmlmenu-menu.htmlmenu-menu-style-2>ul>li.htmlmenu-menu-current>a:after {
+              opacity: 1;
+            }
+
+            .htmlmenu-menu.htmlmenu-menu-style-3>ul>li:last-child>a {
+              padding: 0 10px;
+            }
+
+            .htmlmenu-menu.htmlmenu-menu-style-3>ul>li:hover>a,
+            .htmlmenu-menu.htmlmenu-menu-style-3>ul>li.htmlmenu-menu-current>a {
+              color: #3A3D3F !important;
+              background-color: #F2980F !important;
+            }
+
+            .htmlmenu-menu.htmlmenu-menu-style-3>ul>li:hover>a>label,
+            .htmlmenu-menu.htmlmenu-menu-style-3>ul>li.htmlmenu-menu-current>a>label {
+              border-color: #3A3D3F;
+            }
+
+            .htmlmenu-menu.htmlmenu-submenu-scale li>ul {
+              -webkit-transform: scale(0.5);
+              -ms-transform: scale(0.5);
+              transform: scale(0.5);
+              -webkit-transform-origin: 0 0;
+              -ms-transform-origin: 0 0;
+              transform-origin: 0 0;
+            }
+
+            .htmlmenu-menu.htmlmenu-submenu-scale li.htmlmenu-submenu-right>ul,
+            .htmlmenu-menu.htmlmenu-submenu-scale li.htmlmenu-submenu-right>ul ul {
+              -webkit-transform-origin: 100% 0;
+              -ms-transform-origin: 100% 0;
+              transform-origin: 100% 0;
+            }
+
+            .htmlmenu-menu.htmlmenu-submenu-scale li:hover>ul {
+              -webkit-transform: scale(1);
+              -ms-transform: scale(1);
+              transform: scale(1);
+            }
+
+            .htmlmenu-menu.htmlmenu-submenu-swing-out li {
+              -webkit-perspective: 1000px;
+              -moz-perspective: 1000px;
+              -ms-perspective: 1000px;
+              perspective: 1000px;
+            }
+
+            .htmlmenu-menu.htmlmenu-submenu-swing-out li>ul {
+              -webkit-transform: rotateX(-45deg);
+              -ms-transform: rotateX(-45deg);
+              transform: rotateX(-45deg);
+              -webkit-transform-origin: 0 0;
+              -ms-transform-origin: 0 0;
+              transform-origin: 0 0;
+            }
+
+            .htmlmenu-menu.htmlmenu-submenu-swing-out li>ul ul {
+              -webkit-transform: rotateY(45deg);
+              -ms-transform: rotateY(45deg);
+              transform: rotateY(45deg);
+              -webkit-transform-origin: 0 0;
+              -ms-transform-origin: 0 0;
+              transform-origin: 0 0;
+            }
+
+            .htmlmenu-menu.htmlmenu-submenu-swing-out li.htmlmenu-submenu-right>ul {
+              -webkit-transform-origin: 100% 0;
+              -ms-transform-origin: 100% 0;
+              transform-origin: 100% 0;
+            }
+
+            .htmlmenu-menu.htmlmenu-submenu-swing-out li.htmlmenu-submenu-right>ul ul {
+              -webkit-transform: rotateY(-45deg);
+              -ms-transform: rotateY(-45deg);
+              transform: rotateY(-45deg);
+              -webkit-transform-origin: 100% 0;
+              -ms-transform-origin: 100% 0;
+              transform-origin: 100% 0;
+            }
+
+            .htmlmenu-menu.htmlmenu-submenu-swing-out li:hover>ul {
+              -webkit-transform: rotate(0deg) !important;
+              -ms-transform: rotate(0deg) !important;
+              transform: rotate(0deg) !important;
+            }
+
+            .htmlmenu-menu.htmlmenu-submenu-slide-up li>ul {
+              -webkit-transform: translateY(15px);
+              -ms-transform: translateY(15px);
+              transform: translateY(15px);
+            }
+
+            .htmlmenu-menu.htmlmenu-submenu-slide-up li:hover>ul {
+              -webkit-transform: translateY(0);
+              -ms-transform: translateY(0);
+              transform: translateY(0);
+            }
+
+            .htmlmenu-menu.htmlmenu-submenu-slide-down li>ul {
+              -webkit-transform: translateY(-15px);
+              -ms-transform: translateY(-15px);
+              transform: translateY(-15px);
+            }
+
+            .htmlmenu-menu.htmlmenu-submenu-slide-down li:hover>ul {
+              -webkit-transform: translateY(0);
+              -ms-transform: translateY(0);
+              transform: translateY(0);
+            }
+          }
+        </style>
+      </a>
+    </div>
+  </div>
+
+
+  <script type="text/javascript">
+    (function () {
+      var node = document.querySelector(".htmlmenu-header");
+      var stop = node.offsetTop;
+      var window_last_position = 0;
+      var scroll = window.requestAnimationFrame ||
+        window.webkitRequestAnimationFrame ||
+        window.mozRequestAnimationFrame ||
+        window.msRequestAnimationFrame ||
+        window.oRequestAnimationFrame ||
+        // IE Fallback, you can even fallback to onscroll
+        function (callback) {
+          window.setTimeout(callback, 1000 / 60)
+        };
+
+      var loop = function () {
+        // avoid calculations if not needed
+        if (window_last_position === window.pageYOffset) {
+          scroll(loop);
+          return false;
+        } else window_last_position = window.pageYOffset;
+
+        //... calculations
+        if (window_last_position > stop) {
+          // stick the div
+          if (node.className.indexOf(" htmlmenu-header-scrolled") === -1) {
+            node.className = node.className + ' htmlmenu-header-scrolled';
+          }
+        } else {
+          // release the div
+          node.className = node.className.indexOf(' htmlmenu-header-scrolled') >= 0 ? node.className.replace(' htmlmenu-header-scrolled', '') : node.className;
+        }
+
+        scroll(loop);
+      };
+
+      // call the loop for the first time
+      loop();
+    })();
+
+  </script>
+</body>
+
+</body>
+
+
+
+</body>
+</b>
+</head>
+
+</html>
